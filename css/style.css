@@ -1,0 +1,354 @@
+@charset "utf-8";
+/*-------------------------------
+共通パーツ
+-------------------------------*/
+
+body {
+    color: #707070;
+}
+
+section {
+    padding: 70px 0 20px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*-------------------------------
+ヘッダーメニュー
+-------------------------------*/
+
+header {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #a5e2e3;
+}
+
+.header-logo {
+    text-align: center;
+    line-height: 1;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.header-logo span {
+    font-size: 0.7em;
+}
+
+/*-------------------------------
+ヒーローイメージ
+-------------------------------*/
+
+.top-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/top-img.jpg);
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.top-image-logo {
+    color: #fff;
+    text-align: center;
+}
+
+.top-image-logo p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.top-image-logo h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: 1;
+}
+
+.top-image-logo h1 span {
+    font-size: 0.7em;
+}
+
+/*-------------------------------
+見出し
+-------------------------------*/
+
+h2 {
+    position: relative;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 70px;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    display: inline-block;
+    width: 90px;
+    height: 9px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #a5e2e3;
+    border-radius: 999px;
+}
+
+/*-------------------------------
+県のタグ
+-------------------------------*/
+
+.todohuken-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.todohuken-01, .todohuken-02, .todohuken-03, .todohuken-04, .todohuken-05, .todohuken-06, .todohuken-07, .todohuken-08 {
+    display: inline-block;
+    padding: 5px 13px;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 1.1em;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.todohuken-01 {
+    background-color: #ea7171;
+}
+
+.todohuken-02 {
+    background-color: #eac071;
+}
+
+.todohuken-03 {
+    background-color: #aad566;
+}
+
+.todohuken-04 {
+    background-color: #6ec2d1;
+}
+
+.todohuken-05 {
+    background-color: #84aef0;
+}
+
+.todohuken-06 {
+    background-color: #a071ea;
+}
+
+.todohuken-07 {
+    background-color: #ea71e5;
+}
+
+.todohuken-08 {
+    background-color: #ea71a4;
+}
+
+.todohuken-btn a:last-child {
+    margin-right: 0;
+}
+
+/*-------------------------------
+目的から探す
+-------------------------------*/
+
+.mokuteki-btn {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mokuteki-btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 15vh;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 1.1em;
+    background-blend-mode: multiply;
+}
+
+.mokuteki-btn a :last-child {
+    margin-bottom: 0;
+}
+
+.mokuteki-01 {
+    background: url(../img/onsen.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-02 {
+    background: url(../img/food.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-03 {
+    background: url(../img/zekkei.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-04 {
+    background: url(../img/rekishi.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-05 {
+    background: url(../img/taiken.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-06 {
+    background: url(../img/onsen.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-07 {
+    background: url(../img/sekaiisan.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-08 {
+    background: url(../img/shopping.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-09 {
+    background: url(../img/mitinoie.jpg) rgba(0, 0, 0, 0.3);
+}
+
+/*-------------------------------
+週間ランキング
+-------------------------------*/
+
+.ranking-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ranking-card {
+    width: 48%;
+    margin-bottom: 40px;
+}
+
+.ranking-card-img {
+    position: relative;
+}
+
+.ranking-card-img a img {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+}
+
+.ranking-card-img div {
+    position: absolute;
+    top: -5px;
+    left: 4px;
+    width: 25px;
+    height: 35px;
+    padding-top: 7px;
+    background-color: #74d8d9;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.ranking-01 div {
+    background-color: #e2cc58;
+}
+
+.ranking-02 div {
+    background-color: #bcbcbc;
+}
+
+.ranking-03 div {
+    background-color: #b7a39a;
+}
+
+.ranking-card p {
+    margin-top: 10px;
+}
+
+.ranking-card p a:hover{
+    color: #333;
+}
+
+.read-more-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.read-more-btn a{
+    display: inline-block;
+    background-color: #707070;
+    color: #fff;
+    border-radius: 999px;
+    padding: 15px 30px;
+    line-height: 1;
+    font-size: 1.2em;
+}
+.read-more-btn a:hover{
+    background-color: #333;
+}
+
+@media screen and (max-width:767px) {}
+
+@media screen and (min-width:768px) {
+    /*-------------------------------
+共通パーツ
+-------------------------------*/
+    .container {
+        max-width: 1200px;
+        width: 100%;
+    }
+    /*-------------------------------
+ヒーローイメージ
+-------------------------------*/
+    .top-image {
+        height: 60vh;
+    }
+    .top-image-logo p {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .top-image-logo h1 {
+        font-weight: bold;
+        font-size: 5em;
+        line-height: 1;
+    }
+    /*-------------------------------
+県のタグ
+-------------------------------*/
+    .todohuken-01, .todohuken-02, .todohuken-03, .todohuken-04, .todohuken-05, .todohuken-06, .todohuken-07, .todohuken-08 {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+    /*-------------------------------
+目的から探す
+-------------------------------*/
+    .mokuteki-btn a {
+        height: 25vh;
+        width: 32%;
+        font-size: 1.4em;
+    }
+    /*-------------------------------
+週間ランキング
+-------------------------------*/
+    .ranking-box {
+        flex-wrap: nowrap;
+    }
+    .ranking-card {
+        width: 18%;
+        margin-bottom: 0;
+    }
+}
