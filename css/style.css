@@ -42,6 +42,12 @@ header {
 .header-logo span {
     font-size: 0.7em;
 }
+/*-------------------------------
+フッターメニュー
+-------------------------------*/
+footer{
+    background-color: #e7fbfc;
+}
 
 /*-------------------------------
 ヒーローイメージ
@@ -105,23 +111,209 @@ h2::before {
 }
 
 /*-------------------------------
-県のタグ
+県から探す
 -------------------------------*/
 
-.todohuken-btn {
+.todohuken-btn, .mokuteki-btn {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.todohuken-btn a, .mokuteki-btn a {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 15vh;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 1.2em;
+    background-blend-mode: multiply;
+}
+.todohuken-btn a:last-child{
+    background-position: top center;
+}
+
+.fukuoka-btn {
+    background: url(../img/fukuoka-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.saga-btn{
+    background: url(../img/saga-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.nagasaki-btn {
+    background: url(../img/nagasaki-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.kumamoto-btn {
+    background: url(../img/kumamoto-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.oita-btn {
+    background: url(../img/oita-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.miyazaki-btn {
+    background: url(../img/miyazaki-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.kagosima-btn {
+    background: url(../img/kagosima-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+/*-------------------------------
+目的から探す
+-------------------------------*/
+
+.mokuteki-btn {
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.mokuteki-btn a :last-child {
+    margin-bottom: 0;
+}
+
+.mokuteki-01 {
+    background: url(../img/onsen.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-02 {
+    background: url(../img/food.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-03 {
+    background: url(../img/zekkei.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-04 {
+    background: url(../img/rekishi.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-05 {
+    background: url(../img/taiken.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-06 {
+    background: url(../img/leisure.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-07 {
+    background: url(../img/sekaiisan.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-08 {
+    background: url(../img/shopping.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.mokuteki-09 {
+    background: url(../img/mitinoie.jpg) rgba(0, 0, 0, 0.3);
+}
+
+/*-------------------------------
+週間ランキング/おすすめコースモデル/特集
+-------------------------------*/
+
+.ranking-box, .course-box, .special-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ranking-card, .course-card, .special-card{
+    width: 48%;
+    margin-bottom: 40px;
+}
+
+.ranking-card-img {
+    position: relative;
+}
+.ranking-card-img a img, .course-card a img, .special-card a img{
+    width: 100%;
+    height: 15vh;
+    object-fit: cover;
+}
+
+.ranking-card-img div {
+    position: absolute;
+    top: -5px;
+    left: 4px;
+    width: 25px;
+    height: 35px;
+    padding-top: 7px;
+    background-color: #74d8d9;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.ranking-01 div {
+    background-color: #e2cc58;
+}
+
+.ranking-02 div {
+    background-color: #bcbcbc;
+}
+
+.ranking-03 div {
+    background-color: #b7a39a;
+}
+
+.ranking-card h3, .course-card h3, .special-card h3 {
+    margin-top: 10px;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+.ranking-card h3 a:hover, .course-card h3 a:hover, .special-box h3 a:hover{
+    color: #333;
+}
+
+.read-more-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.read-more-btn a {
+    display: inline-block;
+    background-color: #707070;
+    color: #fff;
+    border-radius: 999px;
+    padding: 15px 30px;
+    line-height: 1;
+    font-size: 1.2em;
+}
+
+.read-more-btn a:hover {
+    background-color: #333;
+}
+.special{
+    background-color: #f6f6f6;
+    margin-top: 50px;
+    padding-bottom: 70px;
+}
+
+/*-------------------------------
+県のタグ
+-------------------------------*/
+.tag{
+    text-align: end;
+    margin-top: 10px;
 }
 
 .todohuken-01, .todohuken-02, .todohuken-03, .todohuken-04, .todohuken-05, .todohuken-06, .todohuken-07, .todohuken-08 {
     display: inline-block;
-    padding: 5px 13px;
+    padding: 3px 10px;
     border-radius: 999px;
     color: #fff;
-    font-size: 1.1em;
-    margin-right: 5px;
-    margin-bottom: 10px;
+    font-size: 1em;
 }
 
 .todohuken-01 {
@@ -156,150 +348,6 @@ h2::before {
     background-color: #ea71a4;
 }
 
-.todohuken-btn a:last-child {
-    margin-right: 0;
-}
-
-/*-------------------------------
-目的から探す
--------------------------------*/
-
-.mokuteki-btn {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.mokuteki-btn a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 48%;
-    height: 15vh;
-    margin-bottom: 10px;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    font-size: 1.1em;
-    background-blend-mode: multiply;
-}
-
-.mokuteki-btn a :last-child {
-    margin-bottom: 0;
-}
-
-.mokuteki-01 {
-    background: url(../img/onsen.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-02 {
-    background: url(../img/food.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-03 {
-    background: url(../img/zekkei.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-04 {
-    background: url(../img/rekishi.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-05 {
-    background: url(../img/taiken.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-06 {
-    background: url(../img/onsen.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-07 {
-    background: url(../img/sekaiisan.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-08 {
-    background: url(../img/shopping.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-09 {
-    background: url(../img/mitinoie.jpg) rgba(0, 0, 0, 0.3);
-}
-
-/*-------------------------------
-週間ランキング
--------------------------------*/
-
-.ranking-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.ranking-card {
-    width: 48%;
-    margin-bottom: 40px;
-}
-
-.ranking-card-img {
-    position: relative;
-}
-
-.ranking-card-img a img {
-    width: 100%;
-    height: 20vh;
-    object-fit: cover;
-}
-
-.ranking-card-img div {
-    position: absolute;
-    top: -5px;
-    left: 4px;
-    width: 25px;
-    height: 35px;
-    padding-top: 7px;
-    background-color: #74d8d9;
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-.ranking-01 div {
-    background-color: #e2cc58;
-}
-
-.ranking-02 div {
-    background-color: #bcbcbc;
-}
-
-.ranking-03 div {
-    background-color: #b7a39a;
-}
-
-.ranking-card p {
-    margin-top: 10px;
-}
-
-.ranking-card p a:hover{
-    color: #333;
-}
-
-.read-more-btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-.read-more-btn a{
-    display: inline-block;
-    background-color: #707070;
-    color: #fff;
-    border-radius: 999px;
-    padding: 15px 30px;
-    line-height: 1;
-    font-size: 1.2em;
-}
-.read-more-btn a:hover{
-    background-color: #333;
-}
 
 @media screen and (max-width:767px) {}
 
@@ -327,28 +375,42 @@ h2::before {
         line-height: 1;
     }
     /*-------------------------------
-県のタグ
+県から探す
 -------------------------------*/
-    .todohuken-01, .todohuken-02, .todohuken-03, .todohuken-04, .todohuken-05, .todohuken-06, .todohuken-07, .todohuken-08 {
-        margin-right: 10px;
-        margin-bottom: 0;
-    }
-    /*-------------------------------
-目的から探す
--------------------------------*/
-    .mokuteki-btn a {
+    .todohuken-btn a, .mokuteki-btn a {
         height: 25vh;
         width: 32%;
+        margin-bottom: 20px;
         font-size: 1.4em;
     }
     /*-------------------------------
-週間ランキング
+週間ランキング/おすすめコースモデル
 -------------------------------*/
-    .ranking-box {
+    .ranking-box, .course-box{
         flex-wrap: nowrap;
     }
     .ranking-card {
         width: 18%;
         margin-bottom: 0;
     }
+    .ranking-card-img a img{
+        height: 20vh;
+    }
+    .course-card, .special-card{
+        width: 23%;
+        margin-bottom: 0;
+    }
+    .course-card a img, .special-card a img {
+        height: 25vh;
+    }
+    .read-more-btn {
+        margin-top: 50px;
+    }
+    /*-------------------------------
+県のタグ
+-------------------------------*/
+.todohuken-01, .todohuken-02, .todohuken-03, .todohuken-04, .todohuken-05, .todohuken-06, .todohuken-07, .todohuken-08 {
+    margin-right: 10px;
+    margin-bottom: 0;
+}
 }
