@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>観光マップ</title>
+    <title>観光マップ|福岡県</title>
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body id="kyushu-top">
+<body id="kyushu-area">
     <header>
         <div class="hamburger-menu">
             <input type="checkbox" id="menu-btn-check">
@@ -83,16 +83,28 @@
         <p class="header-logo">観光マップ<br>
             <span>九州</span></p>
     </header>
-    <div class="top-image">
-        <div class="top-image-logo">
-            <p>キャッチコピーが入ります</p>
-            <h1>観光マップ<br>
-                <span>九州</span></h1>
+    <div class="container">
+        <div class="breadcrumb-box">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="index.html">
+                        <span itemprop="name">ホーム</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </li>
+
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="kyushu-area.html">
+                        <span itemprop="name">県から探す</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
         </div>
     </div>
     <section>
         <div class="container">
-            <h2>県から探す</h2>
+            <h1>県から探す</h1>
             <div class="todohuken-btn">
                 <a href="fukuoka.html" class="fukuoka-btn">福岡県</a>
                 <a href="" class="saga-btn">佐賀県</a>
@@ -105,131 +117,30 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="special">
         <div class="container">
-            <h2>島を旅する</h2>
-            <div class="todohuken-btn">
-                <a href="" class="iki-btn">壱岐</a>
-                <a href="" class="tsushima-btn">対馬</a>
-                <a href="" class="yakushima-btn">屋久島</a>
-                <a href="" class="amami-btn">奄美大島</a>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h2>目的から探す</h2>
-            <div class="mokuteki-btn">
-                <a href="" class="mokuteki-01">温泉</a>
-                <a href="" class="mokuteki-02">グルメ</a>
-                <a href="" class="mokuteki-03">絶景</a>
-                <a href="" class="mokuteki-04">歴史・文化</a>
-                <a href="" class="mokuteki-05">体験</a>
-                <a href="" class="mokuteki-06">レジャー</a>
-                <a href="" class="mokuteki-07">世界遺産</a>
-                <a href="" class="mokuteki-08">ショッピングモール</a>
-                <a href="" class="mokuteki-09">道の家</a>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h2> 週間ランキング</h2>
-            <div class="ranking-box">
-                <div class="ranking-card ranking-01">
-                    <div class="ranking-card-img">
-                        <a href=""><img src="./img/onsen.jpg" alt=""></a>
-                        <div>1</div>
-                    </div>
-                    <h3><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h3>
-                </div>
-                <div class="ranking-card ranking-02">
-                    <div class="ranking-card-img">
-                        <a href=""><img src="./img/onsen.jpg" alt=""></a>
-                        <div>2</div>
-                    </div>
-                    <h3><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h3>
-                </div>
-                <div class="ranking-card ranking-03">
-                    <div class="ranking-card-img">
-                        <a href=""><img src="./img/onsen.jpg" alt=""></a>
-                        <div>3</div>
-                    </div>
-                    <h3><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h3>
-                </div>
-                <div class="ranking-card">
-                    <div class="ranking-card-img">
-                        <a href=""><img src="./img/onsen.jpg" alt=""></a>
-                        <div>4</div>
-                    </div>
-                    <h3><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h3>
-                </div>
-                <div class="ranking-card">
-                    <div class="ranking-card-img">
-                        <a href=""><img src="./img/onsen.jpg" alt=""></a>
-                        <div>5</div>
-                    </div>
-                    <h3><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h3>
-                </div>
-            </div>
-            <div class="read-more-btn">
-                <a href="">ランキングをもっと見る</a>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h2>おすすめモデルコース</h2>
-            <div class="course-box">
-                <div class="course-card">
+            <h2>おすすめスポット</h2>
+            <div class="special-box-big">
+                <div class="special-card">
                     <a href=""><img src="./img/fukuoka-img.jpg" alt=""></a>
                     <h3><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h3>
                     <p class="ken-tag"><a href="" class="todohuken-01">福岡県</a></p>
                 </div>
-                <div class="course-card">
+                <div class="special-card">
                     <a href=""><img src="./img/kumamoto-img.jpg" alt=""></a>
                     <h3><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h3>
                     <p class="ken-tag"><a href="" class="todohuken-04">熊本県</a></p>
                 </div>
-                <div class="course-card">
+                <div class="special-card">
                     <a href=""><img src="./img/oita-img.jpg" alt=""></a>
                     <h3><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h3>
                     <p class="ken-tag"><a href="" class="todohuken-05">大分県</a></p>
                 </div>
-                <div class="course-card">
+                <div class="special-card">
                     <a href=""><img src="./img/nagasaki-img.jpg" alt=""></a>
                     <h3><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h3>
                     <p class="ken-tag"><a href="" class="todohuken-03">長崎県</a></p>
                 </div>
-            </div>
-            <div class="read-more-btn">
-                <a href="">モデルコースをもっと見る</a>
-            </div>
-        </div>
-    </section>
-    <section class="special">
-        <div class="container">
-            <h2>特集</h2>
-            <div class="special-box">
-                <div class="special-card">
-                    <a href=""><img src="./img/fukuoka-img.jpg" alt=""></a>
-                    <h3><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h3>
-                </div>
-                <div class="special-card">
-                    <a href=""><img src="./img/kumamoto-img.jpg" alt=""></a>
-                    <h3><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h3>
-                </div>
-                <div class="special-card">
-                    <a href=""><img src="./img/oita-img.jpg" alt=""></a>
-                    <h3><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h3>
-                </div>
-                <div class="special-card">
-                    <a href=""><img src="./img/nagasaki-img.jpg" alt=""></a>
-                    <h3><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h3>
-                </div>
-            </div>
-            <div class="read-more-btn">
-                <a href="">特集をもっと見る</a>
             </div>
         </div>
     </section>

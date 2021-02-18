@@ -1,10 +1,12 @@
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 /*-------------------------------
 共通パーツ
 -------------------------------*/
 
 body {
     color: #707070;
+    font-family: "Noto Sans JP", "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
 }
 
 section {
@@ -60,7 +62,6 @@ footer {
 
 .footer-nav ul li {
     margin-bottom: 10px;
-    color: #999;
     font-weight: bold;
 }
 
@@ -88,6 +89,40 @@ footer {
     text-align: center;
 }
 /*-------------------------------
+パンくずリスト
+-------------------------------*/
+.breadcrumb-box{
+    padding-top: 120px;
+    margin-bottom: -50px;
+}
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+  }
+  .breadcrumb li {
+    display: inline;/*横に並ぶように*/
+    list-style: none;
+    font-weight: bold;/*太字*/
+  }
+  
+  .breadcrumb li:after {/* >を表示*/
+    content: '>';
+    padding: 0 0.2em;
+    color: #333;
+  }
+  
+  .breadcrumb li:last-child:after {
+    content: '';
+  }
+  
+  .breadcrumb li a {
+    color: #3c8b8c;
+  }
+  
+  .breadcrumb li a:hover {
+    text-decoration: underline;
+  }
+/*-------------------------------
 ヒーローイメージ
 -------------------------------*/
 
@@ -97,10 +132,12 @@ footer {
     align-items: center;
     padding-top: 100px;
     width: 100%;
-    height: 50vh;
-    background-image: url(../img/top-img.jpg);
     background-size: cover;
     background-position: bottom center;
+}
+#kyushu-top .top-image {
+    height: 50vh;
+    background-image: url(../img/top-img.jpg);
 }
 
 .top-image-logo {
@@ -119,6 +156,12 @@ footer {
     font-size: 2.5em;
     line-height: 1;
     font-family: "M PLUS Rounded 1c";
+    border: none;
+    width: 100%;
+}
+.top-image-logo h1::before, 
+.top-image-logo h1::after {
+    border: none;
 }
 
 .top-image-logo h1 span {
@@ -128,6 +171,33 @@ footer {
 /*-------------------------------
 見出し
 -------------------------------*/
+h1 {
+    position: relative;
+    padding: 1.5rem 2rem;
+    border-bottom: 4px solid #707070;
+    border-top: 4px solid #707070;
+    font-size: 2em;
+    text-align: center;
+    font-family: "M PLUS Rounded 1c";
+    margin-bottom: 50px;
+  }
+  
+  h1:before,
+  h1:after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    content: '';
+    border-top: 2px solid #707070;
+  }
+  
+  h1:before {
+    top: 6px;
+  }
+  
+  h1:after {
+    bottom: 6px;
+  }
 
 h2 {
     position: relative;
@@ -366,20 +436,31 @@ h2::before {
 }
 
 /*-------------------------------
-県のタグ
+県のタグ/タグ
 -------------------------------*/
 
-.tag {
-    text-align: end;
-    margin-top: 10px;
+.ken-tag, .tag{
+    margin-top: 20px;
 }
-
-.todohuken-01, .todohuken-02, .todohuken-03, .todohuken-04, .todohuken-05, .todohuken-06, .todohuken-07, .todohuken-08 {
+.ken-tag{
+    text-align: end;
+}
+.ken-tag a, .tag a{
     display: inline-block;
-    padding: 3px 10px;
+    padding: 3px 10px 5px;
     border-radius: 999px;
     color: #fff;
     font-size: 1em;
+    line-height: 1;
+}
+.tag a::before{
+    content: "#";
+}
+
+.tag a{
+    background-color: #3c8b8c;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
 
 .todohuken-01 {
@@ -412,6 +493,29 @@ h2::before {
 
 .todohuken-08 {
     background-color: #ea71a4;
+}
+/*-------------------------------
+各県のトップページ
+-------------------------------*/
+
+.special-box-big {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.special-box-big .special-card {
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: #fff;
+}
+.special-box-big .special-card a img {
+    height: 40vh;
+}
+.special-box-big .special-card h3, .special-box-big .special-card p {
+    padding: 0 5%;
+}
+.special-box-big .special-card p {
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width:767px) {}
@@ -454,7 +558,7 @@ h2::before {
     /*-------------------------------
 ヒーローイメージ
 -------------------------------*/
-    .top-image {
+    #kyushu-top .top-image {
         height: 70vh;
     }
     .top-image-logo p {
@@ -520,4 +624,14 @@ h2::before {
         margin-right: 10px;
         margin-bottom: 0;
     }
+    /*-------------------------------
+各県のおすすめ
+-------------------------------*/
+.special-box-big .special-card {
+    width: 23%;
+    margin-bottom: 0;
+}
+.special-box-big .special-card a img{
+    height: 25vh;
+}
 }

@@ -82,7 +82,7 @@
     width: 100%;
     position: fixed;
     left: 0;
-    top: -100%;
+    top: -150%;
     /*topの値を変更してメニューを画面外へ*/
     background-color: #e7fbfc;
 }
@@ -99,7 +99,7 @@
     display: block;
     margin-bottom: 1px;
     position: relative;
-    padding: 10px 0;
+    padding: 0;
 }
 .acd-label:after{
     box-sizing: border-box;
@@ -107,11 +107,11 @@
     font-size: 2em;
     display: block;
     height: 59px;
-    padding: 10px 15px;
+    padding: 0 15px;
     color: #707070;
     position: absolute;
     right: -20px;
-    top: -10px;
+    top: -37px;
 }
 .acd-content{
     display: block;
@@ -126,7 +126,10 @@
     padding: 0 0 0 30px;
 }
 .acd-check:checked + .acd-label:after{
+    position: absolute;
+    top: -30px;
     content: "×";
+    font-size: 1.5em;
 }
 .acd-check:checked + .acd-label + .acd-content{
     height: auto;
