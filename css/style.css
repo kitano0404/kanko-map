@@ -37,18 +37,56 @@ header {
     font-size: 2em;
     font-weight: bold;
     padding-top: 20px;
+    font-family: "M PLUS Rounded 1c";
 }
 
 .header-logo span {
     font-size: 0.7em;
 }
+
 /*-------------------------------
 フッターメニュー
 -------------------------------*/
-footer{
+
+footer {
     background-color: #e7fbfc;
+    padding: 50px 0;
 }
 
+.footer-nav ul {
+    display: block;
+    margin-left: 10px;
+}
+
+.footer-nav ul li {
+    margin-bottom: 10px;
+    color: #999;
+    font-weight: bold;
+}
+
+.footer-nav ul li ul {
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-nav ul li ul li {
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.footer-nav ul li a, .footer-nav ul li ul li a {
+    color: #707070;
+}
+
+.footer-nav ul li a:hover, .footer-nav ul li ul li a:hover {
+    color: #74d8d9;
+}
+.copy-right{
+    margin-top: 50px;
+    text-align: center;
+}
 /*-------------------------------
 ヒーローイメージ
 -------------------------------*/
@@ -73,12 +111,14 @@ footer{
 .top-image-logo p {
     font-size: 1em;
     margin-bottom: 20px;
+    font-family: "M PLUS Rounded 1c";
 }
 
 .top-image-logo h1 {
     font-weight: bold;
     font-size: 2.5em;
     line-height: 1;
+    font-family: "M PLUS Rounded 1c";
 }
 
 .top-image-logo h1 span {
@@ -94,6 +134,7 @@ h2 {
     text-align: center;
     font-size: 1.8em;
     margin-bottom: 70px;
+    font-family: "M PLUS Rounded 1c";
 }
 
 h2::before {
@@ -132,8 +173,10 @@ h2::before {
     color: #fff;
     font-size: 1.2em;
     background-blend-mode: multiply;
+    font-family: "M PLUS Rounded 1c";
 }
-.todohuken-btn a:last-child{
+
+.todohuken-btn a:nth-child(7) {
     background-position: top center;
 }
 
@@ -141,7 +184,7 @@ h2::before {
     background: url(../img/fukuoka-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
-.saga-btn{
+.saga-btn {
     background: url(../img/saga-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
@@ -163,6 +206,26 @@ h2::before {
 
 .kagosima-btn {
     background: url(../img/kagosima-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.okinawa-btn {
+    background: url(../img/okinawa-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.iki-btn {
+    background: url(../img/iki-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.tsushima-btn {
+    background: url(../img/tsushima-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.yakushima-btn {
+    background: url(../img/yakushima-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.amami-btn {
+    background: url(../img/amami-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
 /*-------------------------------
@@ -225,7 +288,7 @@ h2::before {
     flex-wrap: wrap;
 }
 
-.ranking-card, .course-card, .special-card{
+.ranking-card, .course-card, .special-card {
     width: 48%;
     margin-bottom: 40px;
 }
@@ -233,7 +296,8 @@ h2::before {
 .ranking-card-img {
     position: relative;
 }
-.ranking-card-img a img, .course-card a img, .special-card a img{
+
+.ranking-card-img a img, .course-card a img, .special-card a img {
     width: 100%;
     height: 15vh;
     object-fit: cover;
@@ -271,7 +335,7 @@ h2::before {
     line-height: 1.25;
 }
 
-.ranking-card h3 a:hover, .course-card h3 a:hover, .special-box h3 a:hover{
+.ranking-card h3 a:hover, .course-card h3 a:hover, .special-box h3 a:hover {
     color: #333;
 }
 
@@ -294,7 +358,8 @@ h2::before {
 .read-more-btn a:hover {
     background-color: #333;
 }
-.special{
+
+.special {
     background-color: #f6f6f6;
     margin-top: 50px;
     padding-bottom: 70px;
@@ -303,7 +368,8 @@ h2::before {
 /*-------------------------------
 県のタグ
 -------------------------------*/
-.tag{
+
+.tag {
     text-align: end;
     margin-top: 10px;
 }
@@ -348,7 +414,6 @@ h2::before {
     background-color: #ea71a4;
 }
 
-
 @media screen and (max-width:767px) {}
 
 @media screen and (min-width:768px) {
@@ -360,10 +425,37 @@ h2::before {
         width: 100%;
     }
     /*-------------------------------
+フッターメニュー
+-------------------------------*/
+    .footer-nav ul {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .footer-nav ul li {
+        font-weight: bold;
+        margin-right: 50px;
+        margin-bottom: 0;
+    }
+    .footer-nav ul li:nth-child(4) {
+        margin-right: 0px;
+    }
+    .footer-nav ul li ul {
+        display: block;
+    }
+    .footer-nav ul li ul li {
+        font-weight: normal;
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+    .footer-nav ul li a:hover, .footer-nav ul li ul li a:hover {
+        color: #74d8d9;
+    }
+    /*-------------------------------
 ヒーローイメージ
 -------------------------------*/
     .top-image {
-        height: 60vh;
+        height: 70vh;
     }
     .top-image-logo p {
         font-size: 2em;
@@ -377,7 +469,22 @@ h2::before {
     /*-------------------------------
 県から探す
 -------------------------------*/
-    .todohuken-btn a, .mokuteki-btn a {
+    .todohuken-btn {
+        justify-content: center;
+    }
+    .todohuken-btn a {
+        height: 20vh;
+        width: 23%;
+        margin-bottom: 20px;
+        font-size: 1.4em;
+    }
+    .todohuken-btn a {
+        margin-right: 2%;
+    }
+    .todohuken-btn a:nth-child(4n) {
+        margin-right: 0;
+    }
+    .mokuteki-btn a {
         height: 25vh;
         width: 32%;
         margin-bottom: 20px;
@@ -386,17 +493,17 @@ h2::before {
     /*-------------------------------
 週間ランキング/おすすめコースモデル
 -------------------------------*/
-    .ranking-box, .course-box{
+    .ranking-box, .course-box {
         flex-wrap: nowrap;
     }
     .ranking-card {
         width: 18%;
         margin-bottom: 0;
     }
-    .ranking-card-img a img{
+    .ranking-card-img a img {
         height: 20vh;
     }
-    .course-card, .special-card{
+    .course-card, .special-card {
         width: 23%;
         margin-bottom: 0;
     }
@@ -409,8 +516,8 @@ h2::before {
     /*-------------------------------
 県のタグ
 -------------------------------*/
-.todohuken-01, .todohuken-02, .todohuken-03, .todohuken-04, .todohuken-05, .todohuken-06, .todohuken-07, .todohuken-08 {
-    margin-right: 10px;
-    margin-bottom: 0;
-}
+    .todohuken-01, .todohuken-02, .todohuken-03, .todohuken-04, .todohuken-05, .todohuken-06, .todohuken-07, .todohuken-08 {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
 }
