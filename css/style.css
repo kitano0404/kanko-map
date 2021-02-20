@@ -13,6 +13,10 @@ section {
     padding: 70px 0 20px;
 }
 
+#zenkoku-top section {
+    padding: 70px 0;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
@@ -30,6 +34,10 @@ header {
     width: 100%;
     height: 100px;
     background-color: #a5e2e3;
+}
+
+#zenkoku-top .header-logo {
+    padding-top: 35px;
 }
 
 .header-logo {
@@ -84,44 +92,53 @@ footer {
 .footer-nav ul li a:hover, .footer-nav ul li ul li a:hover {
     color: #74d8d9;
 }
-.copy-right{
+
+.copy-right {
     margin-top: 50px;
     text-align: center;
 }
+
 /*-------------------------------
 パンくずリスト
 -------------------------------*/
-.breadcrumb-box{
+
+.breadcrumb-box {
     padding-top: 120px;
     margin-bottom: -50px;
 }
+
 .breadcrumb {
     margin: 0;
     padding: 0;
-  }
-  .breadcrumb li {
-    display: inline;/*横に並ぶように*/
+}
+
+.breadcrumb li {
+    display: inline;
+    /*横に並ぶように*/
     list-style: none;
-    font-weight: bold;/*太字*/
-  }
-  
-  .breadcrumb li:after {/* >を表示*/
+    font-weight: bold;
+    /*太字*/
+}
+
+.breadcrumb li:after {
+    /* >を表示*/
     content: '>';
     padding: 0 0.2em;
     color: #333;
-  }
-  
-  .breadcrumb li:last-child:after {
+}
+
+.breadcrumb li:last-child:after {
     content: '';
-  }
-  
-  .breadcrumb li a {
+}
+
+.breadcrumb li a {
     color: #3c8b8c;
-  }
-  
-  .breadcrumb li a:hover {
+}
+
+.breadcrumb li a:hover {
     text-decoration: underline;
-  }
+}
+
 /*-------------------------------
 ヒーローイメージ
 -------------------------------*/
@@ -135,6 +152,12 @@ footer {
     background-size: cover;
     background-position: bottom center;
 }
+
+#zenkoku-top .top-image {
+    height: 50vh;
+    background-image: url(../img/zenkoku-top.jpg);
+}
+
 #kyushu-top .top-image {
     height: 50vh;
     background-image: url(../img/top-img.jpg);
@@ -149,6 +172,7 @@ footer {
     font-size: 1em;
     margin-bottom: 20px;
     font-family: "M PLUS Rounded 1c";
+    text-shadow: 0px 0px 10px #3d3d3d;
 }
 
 .top-image-logo h1 {
@@ -158,9 +182,11 @@ footer {
     font-family: "M PLUS Rounded 1c";
     border: none;
     width: 100%;
+    padding: 0;
+    text-shadow: 0px 0px 10px #3d3d3d;
 }
-.top-image-logo h1::before, 
-.top-image-logo h1::after {
+
+.top-image-logo h1::before, .top-image-logo h1::after {
     border: none;
 }
 
@@ -171,6 +197,7 @@ footer {
 /*-------------------------------
 見出し
 -------------------------------*/
+
 h1 {
     position: relative;
     padding: 1.5rem 2rem;
@@ -180,24 +207,23 @@ h1 {
     text-align: center;
     font-family: "M PLUS Rounded 1c";
     margin-bottom: 50px;
-  }
-  
-  h1:before,
-  h1:after {
+}
+
+h1:before, h1:after {
     position: absolute;
     left: 0;
     width: 100%;
     content: '';
     border-top: 2px solid #707070;
-  }
-  
-  h1:before {
+}
+
+h1:before {
     top: 6px;
-  }
-  
-  h1:after {
+}
+
+h1:after {
     bottom: 6px;
-  }
+}
 
 h2 {
     position: relative;
@@ -222,7 +248,7 @@ h2::before {
 }
 
 /*-------------------------------
-県から探す
+県から探す(全国)
 -------------------------------*/
 
 .todohuken-btn, .mokuteki-btn {
@@ -246,7 +272,46 @@ h2::before {
     font-family: "M PLUS Rounded 1c";
 }
 
-.todohuken-btn a:nth-child(7) {
+.hokkaido-btn {
+    background: url(../img/hokkaido-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.tohoku-btn {
+    background: url(../img/tohoku-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.kanto-btn {
+    background: url(../img/kanto-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.chubu-btn {
+    background: url(../img/chubu-img.jpg) rgba(0, 0, 0, 0.3);
+}
+.tokai-btn {
+    background: url(../img/tokai-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.kinki-btn {
+    background: url(../img/kinki-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.chugoku-btn {
+    background: url(../img/chugoku-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.shikoku-btn {
+    background: url(../img/shikoku-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+.kyushu-btn {
+    background: url(../img/kyushu-img.jpg) rgba(0, 0, 0, 0.3);
+}
+
+/*-------------------------------
+県から探す(九州)
+-------------------------------*/
+
+#kyushu-top .todohuken-btn a:nth-child(7) {
     background-position: top center;
 }
 
@@ -439,13 +504,15 @@ h2::before {
 県のタグ/タグ
 -------------------------------*/
 
-.ken-tag, .tag{
+.ken-tag, .tag {
     margin-top: 20px;
 }
-.ken-tag{
+
+.ken-tag {
     text-align: end;
 }
-.ken-tag a, .tag a{
+
+.ken-tag a, .tag a {
     display: inline-block;
     padding: 3px 10px 5px;
     border-radius: 999px;
@@ -453,11 +520,12 @@ h2::before {
     font-size: 1em;
     line-height: 1;
 }
-.tag a::before{
+
+.tag a::before {
     content: "#";
 }
 
-.tag a{
+.tag a {
     background-color: #3c8b8c;
     margin-bottom: 5px;
     margin-right: 5px;
@@ -494,6 +562,7 @@ h2::before {
 .todohuken-08 {
     background-color: #ea71a4;
 }
+
 /*-------------------------------
 各県のトップページ
 -------------------------------*/
@@ -503,17 +572,21 @@ h2::before {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .special-box-big .special-card {
     width: 100%;
     margin-bottom: 40px;
     background-color: #fff;
 }
+
 .special-box-big .special-card a img {
     height: 40vh;
 }
+
 .special-box-big .special-card h3, .special-box-big .special-card p {
     padding: 0 5%;
 }
+
 .special-box-big .special-card p {
     margin-bottom: 10px;
 }
@@ -533,7 +606,6 @@ h2::before {
 -------------------------------*/
     .footer-nav ul {
         display: flex;
-        justify-content: center;
         margin-left: 0;
     }
     .footer-nav ul li {
@@ -558,7 +630,7 @@ h2::before {
     /*-------------------------------
 ヒーローイメージ
 -------------------------------*/
-    #kyushu-top .top-image {
+    #zenkoku-top .top-image, #kyushu-top .top-image {
         height: 70vh;
     }
     .top-image-logo p {
@@ -574,7 +646,7 @@ h2::before {
 県から探す
 -------------------------------*/
     .todohuken-btn {
-        justify-content: center;
+        justify-content: left;
     }
     .todohuken-btn a {
         height: 20vh;
@@ -627,11 +699,11 @@ h2::before {
     /*-------------------------------
 各県のおすすめ
 -------------------------------*/
-.special-box-big .special-card {
-    width: 23%;
-    margin-bottom: 0;
-}
-.special-box-big .special-card a img{
-    height: 25vh;
-}
+    .special-box-big .special-card {
+        width: 23%;
+        margin-bottom: 0;
+    }
+    .special-box-big .special-card a img {
+        height: 25vh;
+    }
 }
