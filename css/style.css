@@ -13,9 +13,11 @@ section {
     padding: 70px 0 20px;
 }
 
+/*
 #zenkoku-top section {
     padding: 70px 0;
 }
+*/
 
 .container {
     width: 90%;
@@ -156,6 +158,7 @@ footer {
 #zenkoku-top .top-image {
     height: 50vh;
     background-image: url(../img/zenkoku-top.jpg);
+    background-position: center;
 }
 
 #kyushu-top .top-image {
@@ -248,6 +251,68 @@ h2::before {
 }
 
 /*-------------------------------
+全国トップ検索
+-------------------------------*/
+
+.top-menu {
+    background-color: #e7fbfc;
+    padding: 30px 5% 20px;
+}
+
+.top-menu h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.top-menu h2::before {
+    content: none;
+}
+
+.top-menu-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-menu-btn a {
+    width: 32.5%;
+    display: block;
+    background-color: #74d8d9;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.top-menu-btn a i {
+    display: block;
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+#form1 {
+    margin-bottom: 20px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#sbox1 {
+    height: 50px;
+    padding-left: 10px;
+    background: #fff;
+    width: 84%;
+}
+
+#sbtn1 {
+    height: 50px;
+    background: #ccc;
+    color: #707070;
+    border: none;
+    font-size: 20px;
+    width: 15%;
+    text-align: center;
+}
+
+/*-------------------------------
 県から探す(全国)
 -------------------------------*/
 
@@ -287,6 +352,7 @@ h2::before {
 .chubu-btn {
     background: url(../img/chubu-img.jpg) rgba(0, 0, 0, 0.3);
 }
+
 .tokai-btn {
     background: url(../img/tokai-img.jpg) rgba(0, 0, 0, 0.3);
 }
@@ -601,6 +667,9 @@ h2::before {
         max-width: 1200px;
         width: 100%;
     }
+    .pc-none {
+        display: none;
+    }
     /*-------------------------------
 フッターメニュー
 -------------------------------*/
@@ -643,6 +712,14 @@ h2::before {
         line-height: 1;
     }
     /*-------------------------------
+全国トップ検索
+-------------------------------*/
+    .top-menu {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px 50px;
+    }
+    /*-------------------------------
 県から探す
 -------------------------------*/
     .todohuken-btn {
@@ -655,7 +732,7 @@ h2::before {
         font-size: 1.4em;
     }
     .todohuken-btn a {
-        margin-right: 2%;
+        margin-right: 2.33%;
     }
     .todohuken-btn a:nth-child(4n) {
         margin-right: 0;
@@ -669,19 +746,21 @@ h2::before {
     /*-------------------------------
 週間ランキング/おすすめコースモデル
 -------------------------------*/
-    .ranking-box, .course-box {
-        flex-wrap: nowrap;
+    .course-box, .special-box {
+        justify-content: left;
     }
     .ranking-card {
         width: 18%;
-        margin-bottom: 0;
     }
     .ranking-card-img a img {
         height: 20vh;
     }
     .course-card, .special-card {
         width: 23%;
-        margin-bottom: 0;
+        margin-right: 2.33%;
+    }
+    .course-card:nth-child(4n), .special-card:nth-child(4n) {
+        margin-right: 0;
     }
     .course-card a img, .special-card a img {
         height: 25vh;
