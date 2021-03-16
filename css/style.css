@@ -10,18 +10,22 @@ body {
 }
 
 section {
-    padding: 70px 0 20px;
+    margin: 70px 0;
 }
-
-/*
-#zenkoku-top section {
-    padding: 70px 0;
-}
-*/
 
 .container {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 /*-------------------------------
@@ -45,11 +49,14 @@ header {
 .header-logo {
     text-align: center;
     line-height: 1;
-    color: #fff;
     font-size: 2em;
     font-weight: bold;
     padding-top: 20px;
     font-family: "M PLUS Rounded 1c";
+}
+
+.header-logo a {
+    color: #ffffff;
 }
 
 .header-logo span {
@@ -62,7 +69,7 @@ header {
 
 footer {
     background-color: #e7fbfc;
-    padding: 50px 0;
+    padding: 50px 0 30px;
 }
 
 .footer-nav ul {
@@ -96,7 +103,7 @@ footer {
 }
 
 .copy-right {
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -104,41 +111,13 @@ footer {
 パンくずリスト
 -------------------------------*/
 
-.breadcrumb-box {
-    padding-top: 120px;
-    margin-bottom: -50px;
-}
-
 .breadcrumb {
-    margin: 0;
-    padding: 0;
-}
-
-.breadcrumb li {
-    display: inline;
-    /*横に並ぶように*/
-    list-style: none;
-    font-weight: bold;
-    /*太字*/
-}
-
-.breadcrumb li:after {
-    /* >を表示*/
-    content: '>';
-    padding: 0 0.2em;
-    color: #333;
-}
-
-.breadcrumb li:last-child:after {
-    content: '';
+    padding-top: 50px;
 }
 
 .breadcrumb li a {
-    color: #3c8b8c;
-}
-
-.breadcrumb li a:hover {
-    text-decoration: underline;
+    color: #707070;
+    text-decoration: none;
 }
 
 /*-------------------------------
@@ -163,7 +142,7 @@ footer {
 
 #kyushu-top .top-image {
     height: 50vh;
-    background-image: url(../img/top-img.jpg);
+    background-image: url(../img//kyushu/top-img.jpg);
 }
 
 .top-image-logo {
@@ -201,33 +180,6 @@ footer {
 見出し
 -------------------------------*/
 
-h1 {
-    position: relative;
-    padding: 1.5rem 2rem;
-    border-bottom: 4px solid #707070;
-    border-top: 4px solid #707070;
-    font-size: 2em;
-    text-align: center;
-    font-family: "M PLUS Rounded 1c";
-    margin-bottom: 50px;
-}
-
-h1:before, h1:after {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    content: '';
-    border-top: 2px solid #707070;
-}
-
-h1:before {
-    top: 6px;
-}
-
-h1:after {
-    bottom: 6px;
-}
-
 h2 {
     position: relative;
     text-align: center;
@@ -250,66 +202,8 @@ h2::before {
     border-radius: 999px;
 }
 
-/*-------------------------------
-全国トップ検索
--------------------------------*/
-
-.top-menu {
-    background-color: #e7fbfc;
-    padding: 30px 5% 20px;
-}
-
-.top-menu h2 {
-    margin-bottom: 20px;
-    font-size: 1.5em;
-}
-
-.top-menu h2::before {
-    content: none;
-}
-
-.top-menu-btn {
-    display: flex;
-    justify-content: space-between;
-}
-
-.top-menu-btn a {
-    width: 32.5%;
-    display: block;
-    background-color: #74d8d9;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.top-menu-btn a i {
-    display: block;
-    font-size: 3em;
-    margin-bottom: 15px;
-}
-
-#form1 {
-    margin-bottom: 20px;
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-}
-
-#sbox1 {
-    height: 50px;
-    padding-left: 10px;
-    background: #fff;
-    width: 84%;
-}
-
-#sbtn1 {
-    height: 50px;
-    background: #ccc;
-    color: #707070;
-    border: none;
-    font-size: 20px;
-    width: 15%;
-    text-align: center;
+h4 {
+    font-size: 1.2em;
 }
 
 /*-------------------------------
@@ -353,10 +247,6 @@ h2::before {
     background: url(../img/chubu-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
-.tokai-btn {
-    background: url(../img/tokai-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
 .kinki-btn {
     background: url(../img/kinki-img.jpg) rgba(0, 0, 0, 0.3);
 }
@@ -382,51 +272,51 @@ h2::before {
 }
 
 .fukuoka-btn {
-    background: url(../img/fukuoka-img.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/fukuoka-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .saga-btn {
-    background: url(../img/saga-img.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/saga-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .nagasaki-btn {
-    background: url(../img/nagasaki-img.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/nagasaki-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .kumamoto-btn {
-    background: url(../img/kumamoto-img.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/kumamoto-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .oita-btn {
-    background: url(../img/oita-img.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/oita-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .miyazaki-btn {
-    background: url(../img/miyazaki-img.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/miyazaki-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .kagosima-btn {
-    background: url(../img/kagosima-img.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/kagosima-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .okinawa-btn {
-    background: url(../img/okinawa-img.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/okinawa-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .iki-btn {
-    background: url(../img/iki-img.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/iki-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .tsushima-btn {
-    background: url(../img/tsushima-img.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/tsushima-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .yakushima-btn {
-    background: url(../img/yakushima-img.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/yakushima-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .amami-btn {
-    background: url(../img/amami-img.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/amami-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
 /*-------------------------------
@@ -444,52 +334,52 @@ h2::before {
 }
 
 .mokuteki-01 {
-    background: url(../img/onsen.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/onsen.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .mokuteki-02 {
-    background: url(../img/food.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/food.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .mokuteki-03 {
-    background: url(../img/zekkei.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/zekkei.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .mokuteki-04 {
-    background: url(../img/rekishi.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/rekishi.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .mokuteki-05 {
-    background: url(../img/taiken.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/taiken.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .mokuteki-06 {
-    background: url(../img/leisure.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/leisure.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .mokuteki-07 {
-    background: url(../img/sekaiisan.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/sekaiisan.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .mokuteki-08 {
-    background: url(../img/shopping.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/shopping.jpg) rgba(0, 0, 0, 0.3);
 }
 
 .mokuteki-09 {
-    background: url(../img/mitinoie.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../img/kyushu/mitinoie.jpg) rgba(0, 0, 0, 0.3);
 }
 
 /*-------------------------------
 週間ランキング/おすすめコースモデル/特集
 -------------------------------*/
 
-.ranking-box, .course-box, .special-box {
+.ranking-box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.ranking-card, .course-card, .special-card {
+.ranking-card {
     width: 48%;
     margin-bottom: 40px;
 }
@@ -498,7 +388,7 @@ h2::before {
     position: relative;
 }
 
-.ranking-card-img a img, .course-card a img, .special-card a img {
+.ranking-card-img a img {
     width: 100%;
     height: 15vh;
     object-fit: cover;
@@ -530,14 +420,8 @@ h2::before {
     background-color: #b7a39a;
 }
 
-.ranking-card h3, .course-card h3, .special-card h3 {
-    margin-top: 10px;
-    font-weight: bold;
-    line-height: 1.25;
-}
-
-.ranking-card h3 a:hover, .course-card h3 a:hover, .special-box h3 a:hover {
-    color: #333;
+.ranking-card .card-body {
+    background-color: #fff;
 }
 
 .read-more-btn {
@@ -563,7 +447,9 @@ h2::before {
 .special {
     background-color: #f6f6f6;
     margin-top: 50px;
+    padding-top: 70px;
     padding-bottom: 70px;
+    margin-bottom: 0;
 }
 
 /*-------------------------------
@@ -630,33 +516,130 @@ h2::before {
 }
 
 /*-------------------------------
-各県のトップページ
+個別ページのデザイン
 -------------------------------*/
 
-.special-box-big {
+.tag-area {
+    text-align: end;
+    margin-top: 30px;
+}
+
+.tag-area a {
+    display: inline-block;
+    position: relative;
+    padding: 3px 15px 5px 30px;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.25;
+}
+
+.tag-area a::before {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    content: '\f3c5';
+    font-weight: 900;
+    left: 12px;
+}
+
+.page-head {
+    margin-top: 20px;
+}
+
+.page-head h1 {
+    font-size: 1.9em;
+    font-weight: bold;
+    border-bottom: #707070 1px solid;
+    line-height: 1.25;
+    padding-bottom: 10px;
+}
+
+.tag-genre {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
-.special-box-big .special-card {
-    width: 100%;
-    margin-bottom: 40px;
-    background-color: #fff;
+.tag-genre li {
+    margin-right: 10px;
 }
 
-.special-box-big .special-card a img {
-    height: 40vh;
+.tag-genre li a {
+    color: #a5e2e3;
 }
 
-.special-box-big .special-card h3, .special-box-big .special-card p {
-    padding: 0 5%;
+.tag-genre li a::before {
+    content: "＃";
 }
-
-.special-box-big .special-card p {
+.overview-right h2{
+    margin-top: 10px;
+    text-align: left;
+    font-family: "Noto Sans JP", "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+    line-height: 1.5;
+    font-size: 1.5em;
+}
+.overview-right h2::before {
+    content: none;
+}
+.overview-right h2{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-family: "Noto Sans JP", "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+    line-height: 1.5;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.information-box{
+    background-color: #f6f6f6;
+    padding: 30px 0;
+}
+.information-box dl{
+    padding: 0 5% 5px;
+}
+.information-box dl dt{
+    font-weight: bold;
+    font-size: 1.05em;
     margin-bottom: 10px;
 }
+.information-box dl dt i{
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+.information-box dl dd dl{
+    padding: 0;
+    margin-bottom: 15px;
+    border-bottom: none;
+}
+.information-box dl dd dl:last-child{
+    margin-bottom: 0;
+}
+.information-box dl dd dl dt{
+    font-size: 1em;
+    font-weight: normal;
+}
 
+.map iframe{
+    width: 100%;
+    height: 500px;
+}
+.kuchikomi-card{
+    border: #707070 1px solid;
+    padding: 20px;
+}
+.sns-btn{
+    display: flex;
+    justify-content: center;
+}
+.sns-btn div{
+    margin-top: 0;
+    margin-right: 10px;
+}
+.line-it-button{
+    margin-top: 4px;
+}
+.sns-btn div:last-child{
+    margin-right: 0;
+}
 @media screen and (max-width:767px) {}
 
 @media screen and (min-width:768px) {
@@ -673,29 +656,6 @@ h2::before {
     /*-------------------------------
 フッターメニュー
 -------------------------------*/
-    .footer-nav ul {
-        display: flex;
-        margin-left: 0;
-    }
-    .footer-nav ul li {
-        font-weight: bold;
-        margin-right: 50px;
-        margin-bottom: 0;
-    }
-    .footer-nav ul li:nth-child(4) {
-        margin-right: 0px;
-    }
-    .footer-nav ul li ul {
-        display: block;
-    }
-    .footer-nav ul li ul li {
-        font-weight: normal;
-        margin-left: 0;
-        margin-bottom: 5px;
-    }
-    .footer-nav ul li a:hover, .footer-nav ul li ul li a:hover {
-        color: #74d8d9;
-    }
     /*-------------------------------
 ヒーローイメージ
 -------------------------------*/
@@ -748,6 +708,7 @@ h2::before {
 -------------------------------*/
     .course-box, .special-box {
         justify-content: left;
+        text-decoration: none;
     }
     .ranking-card {
         width: 18%;
@@ -785,4 +746,53 @@ h2::before {
     .special-box-big .special-card a img {
         height: 25vh;
     }
+    /*-------------------------------
+個別ページのデザイン
+-------------------------------*/
+    .overview{
+        display: flex;
+        justify-content: space-between;
+    }
+.overview-left{
+    width: 63%;
+}
+.overview-right{
+    width: 35%;
+}
+.overview-right h2{
+    margin-top: 0;
+}
+.information-box{
+    width: 65%;
+    margin: 0 auto;
+}
+.information-box dl{
+    display: flex;
+}
+.information-box dl dt{
+    width: 30%;
+    padding-left: 10px;
+}
+.information-box dl dd{
+    width: 58%;
+    padding-right: 10px;
+}
+.information-box dl dd dl{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.information-box dl dd dl dt{
+    width: 100%;
+    padding-left: 0;
+}
+.information-box dl dd dl dd{
+    width: 100%;
+}
+.information-box dl dd dl{
+    padding: 0;
+    margin-bottom: 15px;
+}
 }

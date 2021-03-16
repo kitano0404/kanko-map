@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GLJHV3QVRY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GLJHV3QVRY');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>観光マップ</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="kyushu-top">
+    <header>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <!--ここからメニュー-->
+            <nav class="menu-content">
+                <ul>
+                    <li>
+                        <a href="kyushu.html">九州トップ</a>
+                    </li>
+                    <li>
+                        <input id="acd-check1" class="acd-check" type="checkbox">
+                        <label class="acd-label" for="acd-check1">県から探す</label>
+                        <div class="acd-content">
+                            <ul>
+                                <li><a href="">福岡県</a></li>
+                                <li><a href="">佐賀県</a></li>
+                                <li><a href="">長崎県</a></li>
+                                <li><a href="">熊本県</a></li>
+                                <li><a href="">大分県</a></li>
+                                <li><a href="">宮崎県</a></li>
+                                <li><a href="">鹿児島県</a></li>
+                                <li><a href="">沖縄県</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <input id="acd-check2" class="acd-check" type="checkbox">
+                        <label class="acd-label" for="acd-check2">島を旅する</label>
+                        <div class="acd-content">
+                            <ul>
+                                <li><a href="">壱岐</a></li>
+                                <li><a href="">対馬</a></li>
+                                <li><a href="">屋久島</a></li>
+                                <li><a href="">奄美大島</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <input id="acd-check3" class="acd-check" type="checkbox">
+                        <label class="acd-label" for="acd-check3">目的から探す</label>
+                        <div class="acd-content">
+                            <ul>
+                                <li><a href="">温泉</a></li>
+                                <li><a href="">グルメ</a></li>
+                                <li><a href="">絶景</a></li>
+                                <li><a href="">歴史・文化</a></li>
+                                <li><a href="">体験</a></li>
+                                <li><a href="">レジャー</a></li>
+                                <li><a href="">世界遺産</a></li>
+                                <li><a href="">ショッピングモール</a></li>
+                                <li><a href="">道の駅</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 
+                    <li>
+                        <a href="#">週間ランキング</a>
+                    </li>
+                    <li>
+                        <a href="#">おすすめのモデルコース</a>
+                    </li>
+                    <li>
+                        <a href="#">特集</a>
+                    </li>
+                    -->
+                    <li>
+                        <a href="index.html">全国版トップへ戻る</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--ここまでメニュー-->
+        </div>
+        <p class="header-logo"><a href="kyushu.html">観光マップ<br>
+            <span>九州</span></a></p>
+    </header>
+    <div class="top-image">
+        <div class="top-image-logo">
+            <p>キャッチコピーが入ります</p>
+            <h1>観光マップ<br>
+                <span>九州</span></h1>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <h2>県から探す</h2>
+            <div class="todohuken-btn">
+                <a href="" class="fukuoka-btn">福岡県</a>
+                <a href="" class="saga-btn">佐賀県</a>
+                <a href="" class="nagasaki-btn">長崎県</a>
+                <a href="" class="kumamoto-btn">熊本県</a>
+                <a href="" class="oita-btn">大分県</a>
+                <a href="" class="miyazaki-btn">宮崎県</a>
+                <a href="" class="kagosima-btn">鹿児島県</a>
+                <a href="" class="okinawa-btn">沖縄県</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>島を旅する</h2>
+            <div class="todohuken-btn">
+                <a href="" class="iki-btn">壱岐</a>
+                <a href="" class="tsushima-btn">対馬</a>
+                <a href="" class="yakushima-btn">屋久島</a>
+                <a href="" class="amami-btn">奄美大島</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>目的から探す</h2>
+            <div class="mokuteki-btn">
+                <a href="" class="mokuteki-01">温泉</a>
+                <a href="" class="mokuteki-02">グルメ</a>
+                <a href="" class="mokuteki-03">絶景</a>
+                <a href="" class="mokuteki-04">歴史・文化</a>
+                <a href="" class="mokuteki-05">体験</a>
+                <a href="" class="mokuteki-06">レジャー</a>
+                <a href="" class="mokuteki-07">世界遺産</a>
+                <a href="" class="mokuteki-08">ショッピングモール</a>
+                <a href="" class="mokuteki-09">道の家</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2> 週間ランキング</h2>
+            <div class="ranking-box">
+                <div class="ranking-card ranking-01">
+                    <div class="ranking-card-img">
+                        <a href=""><img src="./img/kyushu/onsen.jpg" alt=""></a>
+                        <div class="">1</div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h4>
+                    </div>
+                </div>
+                <div class="ranking-card ranking-02">
+                    <div class="ranking-card-img">
+                        <a href=""><img src="./img/kyushu/onsen.jpg" alt=""></a>
+                        <div>2</div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h4>
+                    </div>
+                </div>
+                <div class="ranking-card ranking-03">
+                    <div class="ranking-card-img">
+                        <a href=""><img src="./img/kyushu/onsen.jpg" alt=""></a>
+                        <div>3</div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h4>
+                    </div>
+                </div>
+                <div class="ranking-card">
+                    <div class="ranking-card-img">
+                        <a href=""><img src="./img/kyushu/onsen.jpg" alt=""></a>
+                        <div>4</div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h4>
+                    </div>
+                </div>
+                <div class="ranking-card">
+                    <div class="ranking-card-img">
+                        <a href=""><img src="./img/kyushu/onsen.jpg" alt=""></a>
+                        <div>5</div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="read-more-btn">
+                <a href="">ランキングをもっと見る</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2> おすすめモデルコース</h2>
+            <div class="row">
+                <div class="col-lg-3 col-6 mb-3">
+                    <div class="card border-0 px-0">
+                        <a href=""><img class="card-img-top" src="img/kyushu/oita-img.jpg" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h4>
+                            <p class="ken-tag"><a href="" class="todohuken-01">福岡県</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mb-3">
+                    <div class="card border-0">
+                        <a href=""><img class="card-img-top" src="img/kyushu/oita-img.jpg" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h4>
+                            <p class="ken-tag"><a href="" class="todohuken-01">福岡県</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mb-3">
+                    <div class="card border-0">
+                        <a href=""><img class="card-img-top" src="img/kyushu/oita-img.jpg" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h4>
+                            <p class="ken-tag"><a href="" class="todohuken-01">福岡県</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mb-3">
+                    <div class="card border-0">
+                        <a href=""><img class="card-img-top" src="img/kyushu/oita-img.jpg" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h4>
+                            <p class="ken-tag"><a href="" class="todohuken-01">福岡県</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="read-more-btn">
+                <a href="">モデルコースをもっと見る</a>
+            </div>
+        </div>
+    </section>
+    <section class="special">
+        <div class="container">
+            <h2>特集</h2>
+            <div class="row">
+                <div class="col-lg-3 col-6 mb-3">
+                    <div class="card border-0">
+                        <a href=""><img class="card-img-top" src="img/kyushu/oita-img.jpg" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mb-3">
+                    <div class="card border-0">
+                        <a href=""><img class="card-img-top" src="img/kyushu/oita-img.jpg" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mb-3">
+                    <div class="card border-0">
+                        <a href=""><img class="card-img-top" src="img/kyushu/oita-img.jpg" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mb-3">
+                    <div class="card border-0">
+                        <a href=""><img class="card-img-top" src="img/kyushu/oita-img.jpg" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="read-more-btn">
+                <a href="">特集をもっと見る</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="kyushu.html">九州トップ</a></li>
+                    <li>県から探す
+                        <ul>
+                            <li><a href="">福岡県</a></li>
+                            <li><a href="">佐賀県</a></li>
+                            <li><a href="">長崎県</a></li>
+                            <li><a href="">熊本県</a></li>
+                            <li><a href="">大分県</a></li>
+                            <li><a href="">宮崎県</a></li>
+                            <li><a href="">鹿児島県</a></li>
+                            <li><a href="">沖縄県</a></li>
+                        </ul>
+                    </li>
+                    <li>島を旅する
+                        <ul>
+                            <li><a href="">壱岐</a></li>
+                            <li><a href="">対馬</a></li>
+                            <li><a href="">屋久島</a></li>
+                            <li><a href="">奄美大島</a></li>
+                        </ul>
+                    </li>
+                    <li>目的から探す
+                        <ul>
+                            <li><a href="">温泉</a></li>
+                            <li><a href="">グルメ</a></li>
+                            <li><a href="">絶景</a></li>
+                            <li><a href="">歴史・文化</a></li>
+                            <li><a href="">体験</a></li>
+                            <li><a href="">レジャー</a></li>
+                            <li><a href="">世界遺産</a></li>
+                            <li><a href="">ショッピングモール</a></li>
+                            <li><a href="">道の駅</a></li>
+                        </ul>
+                    </li>
+                    <!--
+                    <li><a href="">週間ランキング</a></li>
+                    <li><a href="">おすすめモデルコース</a></li>
+                    <li><a href="">特集</a></li>
+                    -->
+                    <li><a href="index.html">全国版トップ</a></li>
+                </ul>
+            </nav>
+            <p class="copy-right"><small>&copy;2021 観光マップ</small></p>
+        </div>
+    </footer>
+</body>
+
+</html>

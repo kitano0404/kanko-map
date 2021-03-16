@@ -67,6 +67,7 @@
     padding: 10px 30px;
     color: #707070;
 }
+
 .menu-content ul li a {
     display: block;
     width: 100%;
@@ -99,7 +100,7 @@
     display: block;
     margin-bottom: 1px;
     position: relative;
-    padding: 0;
+    padding: 10px 0;
 }
 .acd-label:after{
     box-sizing: border-box;
@@ -111,7 +112,7 @@
     color: #707070;
     position: absolute;
     right: -20px;
-    top: -37px;
+    top: -3px;
 }
 .acd-content{
     display: block;
@@ -127,7 +128,7 @@
 }
 .acd-check:checked + .acd-label:after{
     position: absolute;
-    top: -30px;
+    top: 10px;
     content: "×";
     font-size: 1.5em;
 }
