@@ -565,7 +565,7 @@ h4 {
 }
 
 .tag-genre li a {
-    color: #a5e2e3;
+    color: #74d8d9;
 }
 
 .tag-genre li a::before {
@@ -647,7 +647,8 @@ h4 {
 }
 
 .information-box {
-    background-color: #f6f6f6;
+    border-right: 3px #dddddd double;
+    border-left: 3px #dddddd double;
     padding: 30px 0;
 }
 
@@ -687,9 +688,10 @@ h4 {
 }
 
 .kuchikomi-card {
-    border: #707070 1px solid;
-    padding: 15px;
-    margin-bottom: 20px;
+    background-color: #eeeeee;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 .kuchikomi-card h3 {
@@ -841,6 +843,10 @@ h4 {
     .overview h2 {
         margin-top: 0;
     }
+    .information-box {
+        width: 600px;
+        margin: 0 auto;
+    }
     .information-box dl {
         display: flex;
     }
@@ -849,7 +855,7 @@ h4 {
         padding-left: 10px;
     }
     .information-box dl dd {
-        width: 58%;
+        width: 68%;
         padding-right: 10px;
     }
     .information-box dl dd dl {
