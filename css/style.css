@@ -183,7 +183,7 @@ footer {
 h2 {
     position: relative;
     text-align: center;
-    font-size: 1.65em;
+    font-size: 1.8em;
     margin-bottom: 70px;
     font-family: "M PLUS Rounded 1c";
 }
@@ -769,16 +769,23 @@ h4 {
         font-size: 1.4em;
     }
     .todohuken-btn a {
-        margin-right: 2.33%;
+        margin-right: calc( 8% / 3);
     }
     .todohuken-btn a:nth-child(4n) {
         margin-right: 0;
     }
+    .mokuteki-btn {
+        justify-content: left;
+    }
     .mokuteki-btn a {
         height: 25vh;
         width: 32%;
+        margin-right: 2%;
         margin-bottom: 20px;
         font-size: 1.4em;
+    }
+    .mokuteki-btn a:nth-child(3n) {
+        margin-right: 0;
     }
     /*-------------------------------
 週間ランキング/おすすめコースモデル
@@ -793,11 +800,11 @@ h4 {
     .ranking-card-img a img {
         height: 20vh;
     }
-    .course-card, .special-card {
+    .course-card, .special-card, .col-lg-3 {
         width: 23%;
-        margin-right: 2.33%;
+        margin-right: calc( 8% / 3);
     }
-    .course-card:nth-child(4n), .special-card:nth-child(4n) {
+    .course-card:nth-child(4n), .special-card:nth-child(4n), .col-lg-3:nth-child(4n) {
         margin-right: 0;
     }
     .course-card a img, .special-card a img {
@@ -805,6 +812,9 @@ h4 {
     }
     .read-more-btn {
         margin-top: 50px;
+    }
+    .col-lg-3 {
+        padding: 0;
     }
     /*-------------------------------
 県のタグ
@@ -827,7 +837,7 @@ h4 {
 個別ページのデザイン
 -------------------------------*/
     .page-container {
-        max-width: 980px;
+        max-width: 700px;
         margin: 0 auto;
     }
     .cp_cssslider>img {
