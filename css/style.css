@@ -7,6 +7,8 @@
 body {
     color: #707070;
     font-family: "Noto Sans JP", "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
 }
 
 section {
@@ -43,7 +45,7 @@ header {
 }
 
 #zenkoku-top .header-logo {
-    padding-top: 35px;
+    padding-top: 30px;
 }
 
 .header-logo {
@@ -51,7 +53,7 @@ header {
     line-height: 1;
     font-size: 2em;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 15px;
     font-family: "M PLUS Rounded 1c";
 }
 
@@ -110,6 +112,14 @@ footer {
 /*-------------------------------
 パンくずリスト
 -------------------------------*/
+
+.breadcrumb-section {
+    margin-bottom: 30px;
+}
+
+.breadcrumb-section .page-content {
+    width: 100%;
+}
 
 .breadcrumb {
     padding-top: 50px;
@@ -518,7 +528,9 @@ h4 {
 /*-------------------------------
 個別ページのデザイン
 -------------------------------*/
+.page-container{
 
+}
 .tag-area {
     text-align: end;
     margin-top: -30px;
@@ -699,6 +711,63 @@ h4 {
     font-size: 1.3em;
 }
 
+.acd-check-post{
+    display: none;
+}
+.acd-label-post{
+    background: #5F9696;
+    border-radius: 100px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    line-height: 60px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    transition: .5s;
+}
+.acd-label-post:hover{
+    opacity: 0.8;
+}
+.acd-content-post{
+    display: block;
+    height: 0;
+    opacity: 0;
+    padding: 0 10px;
+    visibility: hidden;
+}
+.acd-check-post:checked + .acd-label-post + .acd-content-post{
+    height: 390px;
+    opacity: 1;
+    padding: 30px 10px;
+    visibility: visible;
+}
+
+.acd-content-post dl dd input, .acd-content-post dl dd textarea{
+    width: 100%;
+    border: #707070 1px solid;
+    padding: 5px;
+}
+.btn-center{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.submit-btn{
+    width: 150px;
+    line-height: 40px;
+    background-color: #0d6efd;;
+    text-align: center;
+    display: inline-block;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: .5s;
+}
+.submit-btn:hover{
+   opacity: 0.8;
+}
+
 .sns-btn {
     display: flex;
     justify-content: center;
@@ -716,6 +785,20 @@ h4 {
 .sns-btn div:last-child {
     margin-right: 0;
 }
+article{
+    margin-bottom: 50px;
+}
+article h2{
+    font-size: 1.5em;
+}
+.page-search{
+    background-color: #f6f6f6;
+    padding: 30px 0;
+}
+.page-search h3{
+    font-size: 1.1em;
+    font-weight: bold;
+}
 
 @media screen and (max-width:767px) {}
 
@@ -731,8 +814,11 @@ h4 {
         display: none;
     }
     /*-------------------------------
-フッターメニュー
+パンくずリスト
 -------------------------------*/
+    .breadcrumb-section .container {
+        padding: 0;
+    }
     /*-------------------------------
 ヒーローイメージ
 -------------------------------*/
@@ -747,14 +833,6 @@ h4 {
         font-weight: bold;
         font-size: 5em;
         line-height: 1;
-    }
-    /*-------------------------------
-全国トップ検索
--------------------------------*/
-    .top-menu {
-        width: 50%;
-        margin: 0 auto;
-        padding: 20px 50px;
     }
     /*-------------------------------
 県から探す
@@ -836,16 +914,30 @@ h4 {
     /*-------------------------------
 個別ページのデザイン
 -------------------------------*/
-    .page-container {
-        max-width: 700px;
+    .page-content {
+        max-width: 980px;
         margin: 0 auto;
+        display: flex;
+    }
+    .page-left {
+        max-width: 700px;
+        width: 100%;
+    }
+    .page-right {
+        max-width: 280px;
+        width: 100%;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+    .tag-area {
+        margin-top: -70px;
     }
     .cp_cssslider>img {
-        height: 400px;
-        width: 600px;
+        height: 466px;
+        max-width: 700px;
     }
     .cp_cssslider label {
-        margin: 430px 5px 0;
+        margin: 496px 5px 0;
     }
     .cp_cssslider label img {
         width: 70px;
@@ -884,5 +976,17 @@ h4 {
     }
     .kuchikomi-card {
         padding: 30px;
+    }
+    .acd-check-post:checked + .acd-label-post + .acd-content-post{
+        padding: 50px 10px;
+    }
+    .acd-content-post dl {
+        display: flex;
+    }
+    .acd-content-post dl dt {
+        width: 20%;
+    }
+    .acd-content-post dl dd {
+        width: 80%;
     }
 }
