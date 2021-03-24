@@ -27,7 +27,9 @@
     <header>
         <div class="hamburger-menu">
             <input type="checkbox" id="menu-btn-check">
-            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            
+            <label for="menu-btn-check" class="menu-btn">
+                <span></span></label>
             <!--ここからメニュー-->
             <nav class="menu-content">
                 <ul>
@@ -230,11 +232,11 @@
                     <p class="text-center mb-5">まだ投稿されていません。
                     </p>
                     -->
-                     <div class="kuchikomi-card">
+                    <div class="kuchikomi-card">
                         <h3>口コミのタイトル</h3>
                         <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                         </p>
-                    </div> 
+                    </div>
                     <div class="post-comment">
                         <input id="acd-post" class="acd-check-post" type="checkbox">
                         <label class="acd-label-post" for="acd-post">口コミを投稿する</label>
@@ -269,12 +271,30 @@
             <article class="page-search">
                 <div class="container">
                     <h2>スポットを探す</h2>
-                    <h3>キーワードから検索する</h3>
+                    <div class="search-box">
+                        <p class="text-center">キーワードから探す</p>
+                        <form id="form4" action="自分のサイトURL" method="get">
+                            <input id="sbox4" id="s" name="s" type="text" placeholder="フリーワードを入力" />
+                            <button id="sbtn4" type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                        <p class="text-center">タグから探す</p>
+                        <ul class="tag-genre">
+                            <li><a href="">温泉</a></li>
+                            <li><a href="">グルメ</a></li>
+                            <li><a href="">絶景</a></li>
+                            <li><a href="">歴史・文化</a></li>
+                            <li><a href="">体験</a></li>
+                            <li><a href="">レジャー</a></li>
+                            <li><a href="">世界遺産</a></li>
+                            <li><a href="">ショッピングモール</a></li>
+                            <li><a href="">道の駅</a></li>
+                        </ul>
+                    </div>
                 </div>
             </article>
             <article>
                 <div class="container">
-                    <h2>おすすめ</h2>
+                    <h2>おすすめスポット</h2>
                     <div class="row">
                         <div class="col-lg-12 col-12 mb-5">
                             <div class="card border-0 mb-4">

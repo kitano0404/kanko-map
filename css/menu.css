@@ -5,7 +5,7 @@
 
 .menu-btn {
     position: fixed;
-    top: 20px;
+    bottom: 20px;
     right: 10px;
     display: flex;
     height: 60px;
@@ -62,7 +62,7 @@
 }
 
 .menu-content ul li {
-    border-bottom: solid 1px #ccc;
+    border-top: solid 1px #ccc;
     list-style: none;
     padding: 10px 30px;
     color: #707070;
@@ -82,13 +82,13 @@
     width: 100%;
     position: fixed;
     left: 0;
-    top: -150%;
+    bottom: -150%;
     /*topの値を変更してメニューを画面外へ*/
     background-color: #e7fbfc;
 }
 
 #menu-btn-check:checked~.menu-content {
-    top: 100px;
+    bottom: 100px;
     /*メニューを画面内へ*/
 }
 
@@ -141,4 +141,16 @@
 @media screen and (max-width:767px) {}
 
 @media screen and (min-width:768px) {
+    .menu-btn {
+        position: fixed;
+        top: 20px;
+        left: 10px;
+        display: flex;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        z-index: 90;
+        background-color: #a5e2e3;
+    }
 }
