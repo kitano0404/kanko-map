@@ -29,6 +29,7 @@
     border-radius: 3px;
     background-color: #fff;
     position: absolute;
+    transition: 0.5s;
 }
 
 .menu-btn span {
