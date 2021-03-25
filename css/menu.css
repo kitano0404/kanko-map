@@ -5,15 +5,20 @@
 
 .menu-btn {
     position: fixed;
-    bottom: 20px;
-    right: 10px;
+    bottom: 0;
+    right: 0px;
     display: flex;
     height: 60px;
     width: 60px;
     justify-content: center;
-    align-items: center;
-    z-index: 90;
-    background-color: #a5e2e3;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menu-text {
+    color: #ffffff;
+    font-size: 0.8em;
+    margin-top: 5px;
 }
 
 .menu-btn span, .menu-btn span:before, .menu-btn span:after {
@@ -26,12 +31,20 @@
     position: absolute;
 }
 
+.menu-btn span {
+    top: 35px;
+}
+
 .menu-btn span:before {
     bottom: 8px;
 }
 
 .menu-btn span:after {
     top: 8px;
+}
+
+#menu-btn-check:checked~.menu-btn {
+    background-color: rgba(255, 255, 255, 0);
 }
 
 #menu-btn-check:checked~.menu-btn span {
@@ -62,58 +75,68 @@
 }
 
 .menu-content ul li {
-    border-top: solid 1px #ccc;
     list-style: none;
-    padding: 10px 30px;
-    color: #707070;
+    padding: 20px 30px;
+    color: #ffffff;
 }
 
 .menu-content ul li a {
     display: block;
     width: 100%;
     box-sizing: border-box;
-    color: #707070;
+    color: #ffffff;
     text-decoration: none;
-    padding: 9px 15px 10px 0;
     position: relative;
 }
 
+.menu-content ul li ul li {
+    padding: 10px 30px 0;
+}
+
 .menu-content {
+    z-index: 99;
     width: 100%;
+    padding: 30px 0 0;
+    height: 100vh;
     position: fixed;
     left: 0;
     bottom: -150%;
     /*topの値を変更してメニューを画面外へ*/
-    background-color: #e7fbfc;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: .5s;
 }
 
 #menu-btn-check:checked~.menu-content {
-    bottom: 100px;
+    bottom: 0;
     /*メニューを画面内へ*/
 }
 
-.acd-check{
+.acd-check {
     display: none;
 }
-.acd-label{
+
+.acd-label {
     display: block;
     margin-bottom: 1px;
     position: relative;
-    padding: 10px 0;
+    padding: 0;
 }
-.acd-label:after{
+
+.acd-label:after {
     box-sizing: border-box;
-    content: "+";
-    font-size: 2em;
+    font-family: "Font Awesome 5 Free";
+    content: '\f078';
+    font-weight: 900;
     display: block;
     height: 59px;
     padding: 0 15px;
-    color: #707070;
+    color: #ffffff;
     position: absolute;
     right: -20px;
-    top: -3px;
+    top: 0;
 }
-.acd-content{
+
+.acd-content {
     display: block;
     height: 0;
     opacity: 0;
@@ -121,17 +144,21 @@
     transition: .5s;
     visibility: hidden;
 }
-.acd-content ul li{
+
+.acd-content ul li {
     border-bottom: none;
     padding: 0 0 0 30px;
 }
-.acd-check:checked + .acd-label:after{
+
+.acd-check:checked+.acd-label:after {
     position: absolute;
-    top: 10px;
-    content: "×";
-    font-size: 1.5em;
+    top: -5px;
+    font-family: "Font Awesome 5 Free";
+    content: '\f077';
+    font-weight: 900;
 }
-.acd-check:checked + .acd-label + .acd-content{
+
+.acd-check:checked+.acd-label+.acd-content {
     height: auto;
     opacity: 1;
     padding: 10px;
@@ -141,16 +168,124 @@
 @media screen and (max-width:767px) {}
 
 @media screen and (min-width:768px) {
+    /*-------------------------------
+ハンバーガーボタン
+-------------------------------*/
     .menu-btn {
         position: fixed;
-        top: 20px;
-        left: 10px;
+        top: 15px;
+        right: 15px;
         display: flex;
         height: 60px;
         width: 60px;
         justify-content: center;
-        align-items: center;
-        z-index: 90;
+        z-index: 150;
         background-color: #a5e2e3;
+    }
+    .menu-text {
+        color: #ffffff;
+    }
+    .menu-btn span, .menu-btn span:before, .menu-btn span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: #fff;
+        position: absolute;
+    }
+    .menu-btn span {
+        top: 40px;
+    }
+    .menu-btn span:before {
+        bottom: 8px;
+    }
+    .menu-btn span:after {
+        top: 8px;
+    }
+    #menu-btn-check:checked~.menu-btn span {
+        background-color: rgba(255, 255, 255, 0);
+        /*メニューオープン時は真ん中の線を透明にする*/
+    }
+    #menu-btn-check:checked~.menu-btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #menu-btn-check:checked~.menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    #menu-btn-check {
+        display: none;
+    }
+    /*-------------------------------
+メニュー
+-------------------------------*/
+    .menu-content ul {
+        padding: 0;
+        background-color: #e7fbfc;
+    }
+    .menu-content ul li {
+        border-bottom: solid 1px #ccc;
+        list-style: none;
+        padding: 20px 30px;
+        color: #707070;
+    }
+    .menu-content ul li a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        color: #707070;
+        text-decoration: none;
+        position: relative;
+    }
+    .menu-content ul li ul li {
+        padding: 10px 30px 0;
+    }
+    .menu-content {
+        z-index: 80;
+        width: 100%;
+        padding: 0;
+        position: fixed;
+        height: 0;
+        left: 0;
+        /*topの値を変更してメニューを画面外へ*/
+        background-color: #e7fbfc;
+        opacity: 0;
+    }
+    #menu-btn-check:checked~.menu-content {
+        top: 100px;
+        opacity: 1;
+        /*メニューを画面内へ*/
+    }
+    .acd-check {
+        display: none;
+    }
+    .acd-label {
+        display: block;
+        margin-bottom: 1px;
+        position: relative;
+        padding: 0;
+    }
+    .acd-label:after {
+        color: #707070;
+    }
+    .acd-content {
+        display: block;
+        height: 0;
+        opacity: 0;
+        padding: 0 10px;
+        transition: .5s;
+        visibility: hidden;
+    }
+    .acd-content ul li {
+        border-bottom: none;
+        padding: 0 0 0 30px;
+    }
+    .acd-check:checked+.acd-label+.acd-content {
+        height: auto;
+        opacity: 1;
+        padding: 10px;
+        visibility: visible;
     }
 }
