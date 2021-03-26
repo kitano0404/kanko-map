@@ -121,8 +121,6 @@ footer {
     width: 100%;
 }
 
-.breadcrumb {}
-
 .breadcrumb li a {
     color: #707070;
     text-decoration: none;
@@ -907,12 +905,10 @@ article h2 {
     #zenkoku-top .header-logo {
         padding-top: 30px;
     }
-    
     .header-logo {
         font-size: 2em;
         padding-top: 15px;
     }
-
     /*-------------------------------
 パンくずリスト
 -------------------------------*/
@@ -1020,6 +1016,11 @@ article h2 {
     /*-------------------------------
 個別ページのデザイン
 -------------------------------*/
+    .page-container {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 0 2.5%;
+    }
     .page-content {
         max-width: 980px;
         margin: 0 auto;
