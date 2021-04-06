@@ -137,12 +137,12 @@ footer {
     width: 100%;
     background-size: cover;
     background-position: bottom center;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 #zenkoku-top .top-image {
     height: 50vh;
-    padding-top: 80px;
+    padding-top: 60px;
     background-image: url(../img/zenkoku-top.jpg);
     background-position: center;
 }
@@ -646,13 +646,16 @@ h4 {
 }
 
 .overview h2 {
-    margin-top: 10px;
+    padding-top: 30px;
     margin-bottom: 30px;
     text-align: left;
     font-family: "Noto Sans JP", "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
     line-height: 1.5;
     font-size: 1.5em;
     font-weight: bold;
+}
+.overview p {
+    margin-bottom: 20px;
 }
 
 .information-box {
