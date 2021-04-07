@@ -628,11 +628,6 @@ h4 {
     object-fit: cover;
 }
 
-.cp_cssslider input[name='cp_switch']:checked+label {
-    border: 2px solid #FF7043;
-    opacity: 1;
-}
-
 .cp_cssslider input[name='cp_switch']~img {
     opacity: 0;
 }
@@ -656,6 +651,11 @@ h4 {
 }
 .overview p {
     margin-bottom: 20px;
+}
+.overview img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
 }
 
 .information-box {
