@@ -523,6 +523,51 @@ h4 {
 }
 
 /*-------------------------------
+各県のトップページ
+-------------------------------*/
+
+.area-check{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.area-btn{
+    width: 100%;
+    
+}
+.area-btn input{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+}
+.area-btn label{
+    padding: 10px 25px;
+    border-radius: 100px;
+    background-color: #eeeeee;
+    margin-bottom: 10px;
+    display: block;
+    cursor: pointer;
+    transition: .5s;
+}
+.area-btn label:hover,
+.area-btn input:checked + label{
+    background: #a5e2e3;
+}
+.search-btn {
+    display: inline-block;
+    background-color: #707070;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 50px;
+    line-height: 1;
+    font-size: 1.2em;
+    margin: 10px 0 30px;
+}
+
+.search-btn:hover {
+    background-color: #333;
+}
+/*-------------------------------
 個別ページのデザイン
 -------------------------------*/
 
@@ -649,9 +694,11 @@ h4 {
     font-size: 1.5em;
     font-weight: bold;
 }
+
 .overview p {
     margin-bottom: 20px;
 }
+
 .overview img {
     width: 100%;
     height: auto;
@@ -1016,6 +1063,13 @@ article h2 {
     .special-box-big .special-card a img {
         height: 25vh;
     }
+    /*-------------------------------
+各県のトップページ
+-------------------------------*/
+.area-btn{
+    width: 49%;
+    
+}
     /*-------------------------------
 個別ページのデザイン
 -------------------------------*/
