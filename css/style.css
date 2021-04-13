@@ -149,7 +149,7 @@ footer {
 
 #kyushu-top .top-image {
     height: 50vh;
-    background-image: url(../img//kyushu/top-img.jpg);
+    background-image: url(../kyushu/img/top-img.jpg);
 }
 
 .top-image-logo {
@@ -190,18 +190,18 @@ footer {
 h2 {
     position: relative;
     text-align: center;
-    font-size: 1.8em;
-    margin-bottom: 70px;
+    font-size: 1.5em;
+    margin-bottom: 60px;
     font-family: "M PLUS Rounded 1c";
 }
 
 h2::before {
     content: '';
     position: absolute;
-    bottom: -30px;
+    bottom: -25px;
     display: inline-block;
-    width: 90px;
-    height: 9px;
+    width: 80px;
+    height: 8px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -238,92 +238,12 @@ h4 {
     font-family: "M PLUS Rounded 1c";
 }
 
-.hokkaido-btn {
-    background: url(../img/hokkaido-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.tohoku-btn {
-    background: url(../img/tohoku-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.kanto-btn {
-    background: url(../img/kanto-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.chubu-btn {
-    background: url(../img/chubu-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.kinki-btn {
-    background: url(../img/kinki-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.chugoku-btn {
-    background: url(../img/chugoku-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.shikoku-btn {
-    background: url(../img/shikoku-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.kyushu-btn {
-    background: url(../img/kyushu-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
 /*-------------------------------
 県から探す(九州)
 -------------------------------*/
 
 #kyushu-top .todohuken-btn a:nth-child(7) {
     background-position: top center;
-}
-
-.fukuoka-btn {
-    background: url(../img/kyushu/fukuoka-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.saga-btn {
-    background: url(../img/kyushu/saga-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.nagasaki-btn {
-    background: url(../img/kyushu/nagasaki-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.kumamoto-btn {
-    background: url(../img/kyushu/kumamoto-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.oita-btn {
-    background: url(../img/kyushu/oita-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.miyazaki-btn {
-    background: url(../img/kyushu/miyazaki-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.kagosima-btn {
-    background: url(../img/kyushu/kagosima-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.okinawa-btn {
-    background: url(../img/kyushu/okinawa-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.iki-btn {
-    background: url(../img/kyushu/iki-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.tsushima-btn {
-    background: url(../img/kyushu/tsushima-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.yakushima-btn {
-    background: url(../img/kyushu/yakushima-img.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.amami-btn {
-    background: url(../img/kyushu/amami-img.jpg) rgba(0, 0, 0, 0.3);
 }
 
 /*-------------------------------
@@ -338,42 +258,6 @@ h4 {
 
 .mokuteki-btn a :last-child {
     margin-bottom: 0;
-}
-
-.mokuteki-01 {
-    background: url(../img/kyushu/onsen.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-02 {
-    background: url(../img/kyushu/food.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-03 {
-    background: url(../img/kyushu/zekkei.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-04 {
-    background: url(../img/kyushu/rekishi.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-05 {
-    background: url(../img/kyushu/taiken.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-06 {
-    background: url(../img/kyushu/leisure.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-07 {
-    background: url(../img/kyushu/sekaiisan.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-08 {
-    background: url(../img/kyushu/shopping.jpg) rgba(0, 0, 0, 0.3);
-}
-
-.mokuteki-09 {
-    background: url(../img/kyushu/mitinoie.jpg) rgba(0, 0, 0, 0.3);
 }
 
 /*-------------------------------
@@ -526,47 +410,40 @@ h4 {
 各県のトップページ
 -------------------------------*/
 
-.area-check{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.area-btn{
+.todohuken-top-h1 {
+    font-size: 2.3em;
+    border: #707070 3px double;
+    line-height: 100px;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 70px;
+    font-family: "M PLUS Rounded 1c";
     width: 100%;
-    
-}
-.area-btn input{
-    opacity: 0;
-    position: absolute;
-    left: 0;
-}
-.area-btn label{
-    padding: 10px 25px;
-    border-radius: 100px;
-    background-color: #eeeeee;
-    margin-bottom: 10px;
-    display: block;
-    cursor: pointer;
-    transition: .5s;
-}
-.area-btn label:hover,
-.area-btn input:checked + label{
-    background: #a5e2e3;
-}
-.search-btn {
-    display: inline-block;
-    background-color: #707070;
-    color: #fff;
-    border-radius: 10px;
-    padding: 20px 50px;
-    line-height: 1;
-    font-size: 1.2em;
-    margin: 10px 0 30px;
+    padding: 0;
 }
 
-.search-btn:hover {
-    background-color: #333;
+.area-btn {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.area-btn li {
+    display: block;
+    width: calc( 100% / 3);
+    text-align: center;
+}
+
+.area-btn li a {
+    color: #ffffff;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
 /*-------------------------------
 個別ページのデザイン
 -------------------------------*/
@@ -929,15 +806,21 @@ article h2 {
     font-size: 0.8em;
 }
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    .container-smnone {
+        width: 100%;
+    }
+}
 
 @media screen and (min-width:768px) {
     /*-------------------------------
 共通パーツ
 -------------------------------*/
-    .container {
+    .container, .container-smnone{
         max-width: 1200px;
-        width: 100%;
+        width: 95%;
+        padding: 0;
+        margin: 0 auto;
     }
     .pc-none {
         display: none;
@@ -1066,10 +949,20 @@ article h2 {
     /*-------------------------------
 各県のトップページ
 -------------------------------*/
-.area-btn{
-    width: 49%;
-    
-}
+    .area-btn {
+        justify-content: left;
+    }
+    .area-btn li {
+        width: 15%;
+        margin-top: 20px;
+        margin-right: 2%;
+    }
+    .area-btn li:nth-child(6n) {
+        margin-right: 0;
+    }
+    .area-btn li a {
+        height: 30vh;
+    }
     /*-------------------------------
 個別ページのデザイン
 -------------------------------*/

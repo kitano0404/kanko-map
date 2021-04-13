@@ -15,16 +15,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>観光マップ 九州版｜福岡県</title>
     <meta name="description" content="">
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="../../css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../../css/menu.css">
+    <link rel="stylesheet" href="../../css/btn-img.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 
-<body>
+<body id="fukuoka-top">
     <header>
         <div class="hamburger-menu">
             <input type="checkbox" id="menu-btn-check">
@@ -36,14 +37,14 @@
             <nav class="menu-content">
                 <ul>
                     <li>
-                        <a href="kyushu.html">九州トップ</a>
+                        <a href="../index.html">九州トップ</a>
                     </li>
                     <li>
                         <input id="acd-check1" class="acd-check" type="checkbox">
                         <label class="acd-label" for="acd-check1">県から探す</label>
                         <div class="acd-content">
                             <ul>
-                                <li><a href="">福岡県</a></li>
+                                <li><a href="index.html">福岡県</a></li>
                                 <li><a href="">佐賀県</a></li>
                                 <li><a href="">長崎県</a></li>
                                 <li><a href="">熊本県</a></li>
@@ -95,94 +96,78 @@
                     </li>
                     -->
                     <li>
-                        <a href="index.html">全国版トップへ戻る</a>
+                        <a href="../../index.html">全国版トップへ戻る</a>
                     </li>
                 </ul>
             </nav>
             <!--ここまでメニュー-->
         </div>
-        <p class="header-logo"><a href="kyushu.html">観光マップ<br>
+        <p class="header-logo"><a href="../index.html">観光マップ<br>
                 <span>九州</span></a></p>
     </header>
     <section class="breadcrumb-section">
         <div class="container">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">全国版トップ</a></li>
-                    <li class="breadcrumb-item"><a href="kyushu.html">九州</a></li>
-                    <li class="breadcrumb-item"><a href="#">福岡</a></li>
+                    <li class="breadcrumb-item"><a href="../../index.html">全国版トップ</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html">九州</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">福岡</a></li>
                 </ol>
             </nav>
         </div>
     </section>
+    <div class="todohuken-top">
+        <div class="todohuken-top-h1">
+            <h1>福岡県<br>
+                <span>Fukuoka</span></h1>
+        </div>
+    </div>
     <section>
         <div class="container">
             <h2>エリアから探す</h2>
-            <div class="area-check">
-                <div class="area-btn">
-                    <input id="fukuoka01" type="checkbox" />
-                    <label for="fukuoka01">福岡市</label>
-                </div>
-                <div class="area-btn">
-                    <input id="fukuoka02" type="checkbox" />
-                    <label for="fukuoka02">春日市・大野城市・太宰府市・那珂川市</label>
-                </div>
-                <div class="area-btn">
-                    <input id="fukuoka03" type="checkbox" />
-                    <label for="fukuoka03">糟屋郡</label>
-                </div>
-                <div class="area-btn">
-                    <input id="fukuoka04" type="checkbox" />
-                    <label for="fukuoka04">宗像市・古賀市・福津市・糟屋郡新宮町</label>
-                </div>
-                <div class="area-btn">
-                    <input id="fukuoka05" type="checkbox" />
-                    <label for="fukuoka05">糸島市</label>
-                </div>
-                <div class="area-btn">
-                    <input id="fukuoka06" type="checkbox" />
-                    <label for="fukuoka06">朝倉市・朝倉郡</label>
-                </div>
-                <div class="area-btn">
-                    <input id="fukuoka07" type="checkbox" />
-                    <label for="fukuoka07">北九州市</label>
-                </div>
-                <div class="area-btn">
-                    <input id="fukuoka08" type="checkbox" />
-                    <label for="fukuoka08">中間市・遠賀郡</label>
-                </div>
-                <div class="area-btn">
-                    <input id="fukuoka09" type="checkbox" />
-                    <label for="fukuoka09">行橋市・豊前市・京都郡・築上郡 </label>
-                </div>
-                <div class="area-btn">
-                    <input id="fukuoka10" type="checkbox" />
-                    <label for="fukuoka10">八女市・筑後市・八女郡</label>
-                </div>
-                <div class="area-btn">
-                    <input id="fukuoka12" type="checkbox" />
-                    <label for="fukuoka12">大牟田市・柳川市・みやま市</label>
-                </div>
-                <div class="area-btn">
-                    <input id="fukuoka13" type="checkbox" />
-                    <label for="fukuoka13">直方市・宮若市・鞍手郡</label>
-                </div>
-                <div class="area-btn">
-                    <input id="fukuoka14" type="checkbox" />
-                    <label for="fukuoka14">飯塚市・嘉麻市・嘉穂郡</label>
-                </div>
-                <div class="area-btn">
-                    <input id="fukuoka15" type="checkbox" />
-                    <label for="fukuoka15">田川市・田川郡</label>
-                </div>
-                <div class="area-btn">
-                    <input id="fukuoka11" type="checkbox" />
-                    <label for="fukuoka11">久留米市・大川市・小郡市・うきは市・三井郡・三潴郡</label>
-                </div>
-            </div>
-            <div class="btn-center">
-                <input type="button" value="検索する" class="search-btn">
-            </div>
+        </div>
+        <div class="container-smnone">
+            <ul class="area-btn">
+                <li><a href="index.html" class="fukuoka-01">福岡市</a></li>
+                <li><a href="" class="fukuoka-02">春日市<br>
+                        大野城市<br>
+                        太宰府市<br>
+                        那珂川市</a></li>
+                <li><a href="" class="fukuoka-03">糟屋郡</a></li>
+                <li><a href="" class="fukuoka-04">宗像市<br>
+                        古賀市<br>
+                        福津市<br>
+                        糟屋郡新宮町</a></li>
+                <li><a href="" class="fukuoka-05">糸島市</a></li>
+                <li><a href="" class="fukuoka-06">朝倉市<br>
+                        朝倉郡</a></li>
+                <li><a href="" class="fukuoka-07">北九州市</a></li>
+                <li><a href="" class="fukuoka-08">中間市<br>
+                        遠賀郡</a></li>
+                <li><a href="" class="fukuoka-09">行橋市<br>
+                        豊前市<br>
+                        京都郡<br>
+                        築上郡</a></li>
+                <li><a href="" class="fukuoka-10">八女市<br>
+                        筑後市<br>
+                        八女郡</a></li>
+                <li><a href="" class="fukuoka-11">久留米市<br>
+                        大川市<br>
+                        小郡市<br>
+                        うきは市<br>
+                        三井郡<br>
+                        三潴郡</a></li>
+                <li><a href="" class="fukuoka-12">大牟田市<br>
+                        柳川市<br>
+                        みやま市</a></li>
+                <li><a href="" class="fukuoka-13">直方市<br>
+                        宮若市<br>
+                        鞍手郡</a></li>
+                <li><a href="" class="fukuoka-14">飯塚市<br>
+                        嘉麻市<br>
+                        嘉穂郡</a></li>
+                <li><a href="" class="fukuoka-15">田川市<br>田川郡</a></li>
+            </ul>
         </div>
     </section>
     <section>
@@ -205,10 +190,10 @@
         <div class="container">
             <nav class="footer-nav">
                 <ul>
-                    <li><a href="kyushu.html">九州トップ</a></li>
+                    <li><a href="../index.html">九州トップ</a></li>
                     <li>県から探す
                         <ul>
-                            <li><a href="">福岡県</a></li>
+                            <li><a href="index.html">福岡県</a></li>
                             <li><a href="">佐賀県</a></li>
                             <li><a href="">長崎県</a></li>
                             <li><a href="">熊本県</a></li>
@@ -244,7 +229,7 @@
                     <li><a href="">おすすめモデルコース</a></li>
                     <li><a href="">特集</a></li>
                     -->
-                    <li><a href="index.html">全国版トップ</a></li>
+                    <li><a href="../../index.html">全国版トップ</a></li>
                 </ul>
             </nav>
             <p class="copy-right"><small>&copy;2021 観光マップ</small></p>
