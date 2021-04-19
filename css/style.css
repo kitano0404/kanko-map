@@ -239,9 +239,6 @@ h4 {
     background-blend-mode: multiply;
     font-family: "M PLUS Rounded 1c";
 }
-.todohuken-btn a:hover, .mokuteki-btn a:hover{
-    
-}
 
 /*-------------------------------
 県から探す(九州)
@@ -422,20 +419,18 @@ h4 {
     width: 100%;
     background-size: cover;
     height: 30vh;
-    background-image: url(../kyushu/fukuoka/img/todohuken-top.jpg);
+}
+#fukuoka-top .todohuken-top{
+    background-image: url(../kyushu/fukuoka/img/fukuoka-top.jpg);
+    background-position: center;
 }
 .todohuken-top-h1{
-    height: 200px;
-    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#fukuoka-top .todohuken-top-h1{
-    background-image: url(../kyushu/fukuoka/img/fukuoka-map.svg);
-}
 .todohuken-top-h1 h1{
-    font-size: 2em;
+    font-size: 2.3em;
     margin-top: 20px;
     line-height: 0.8;
     text-align: center;
@@ -470,17 +465,26 @@ h4 {
     display: flex;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
     background-blend-mode: multiply;
-    color: #ffffff;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100%;
     padding: 5px;
+    color: #ffffff;
     text-shadow: 0px 0px 4px #3d3d3d;
 }
-
-.area-btn li a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+.area-btn li a::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f061';
+    font-weight: 900;
+    font-size: 0.9em;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    display: inline-block;
+    color:  #00B06B;
+    text-align: center;
+    border-radius: 50%;
 }
 
 /*-------------------------------
@@ -990,10 +994,6 @@ article h2 {
 -------------------------------*/
 .todohuken-top{
     height: 50vh;
-}
-.todohuken-top-h1{
-    width: 40vh;
-    height: 40vh;
 }
 .area-btn {
     display: grid;
