@@ -192,7 +192,7 @@
         width: 60px;
         justify-content: center;
         z-index: 150;
-        background-color: #a5e2e3;
+        background-color: #00B06B;
     }
     .menu-text {
         color: #ffffff;
@@ -217,19 +217,18 @@
 -------------------------------*/
     .menu-content ul {
         padding: 0;
-        background-color: #e7fbfc;
+        background-color: #00B06B;
     }
     .menu-content ul li {
-        border-bottom: solid 1px #ccc;
         list-style: none;
         padding: 20px 30px;
-        color: #707070;
+        color: #ffffff;
     }
     .menu-content ul li a {
         display: block;
         width: 100%;
         box-sizing: border-box;
-        color: #707070;
+        color: #ffffff;
         text-decoration: none;
         position: relative;
     }
@@ -244,7 +243,7 @@
         height: 0;
         left: 0;
         /*topの値を変更してメニューを画面外へ*/
-        background-color: #e7fbfc;
+        background-color: #00B06B;
         opacity: 0;
     }
     #menu-btn-check:checked~.menu-content {
@@ -262,7 +261,7 @@
         padding: 0;
     }
     .acd-label:after {
-        color: #707070;
+        color: #ffffff;
     }
     .acd-content {
         display: block;

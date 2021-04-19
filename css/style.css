@@ -39,7 +39,7 @@ header {
     position: fixed;
     width: 100%;
     height: 60px;
-    background-color: #a5e2e3;
+    background-color: #00B06B;
 }
 
 #zenkoku-top .header-logo {
@@ -68,7 +68,7 @@ header {
 -------------------------------*/
 
 footer {
-    background-color: #e7fbfc;
+    background-color: #cccccc;
     padding: 50px 0 30px;
 }
 
@@ -99,12 +99,13 @@ footer {
 }
 
 .footer-nav ul li a:hover, .footer-nav ul li ul li a:hover {
-    color: #74d8d9;
+    color: #00B06B;
 }
 
 .copy-right {
     margin-top: 30px;
     text-align: center;
+    color: #ffffff;
 }
 
 /*-------------------------------
@@ -151,6 +152,7 @@ footer {
     height: 50vh;
     background-image: url(../kyushu/img/top-img.jpg);
 }
+
 
 .top-image-logo {
     color: #fff;
@@ -205,7 +207,7 @@ h2::before {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    background-color: #a5e2e3;
+    background-color: #00B06B;
     border-radius: 999px;
 }
 
@@ -236,6 +238,9 @@ h4 {
     font-size: 1.2em;
     background-blend-mode: multiply;
     font-family: "M PLUS Rounded 1c";
+}
+.todohuken-btn a:hover, .mokuteki-btn a:hover{
+    
 }
 
 /*-------------------------------
@@ -292,7 +297,7 @@ h4 {
     width: 25px;
     height: 35px;
     padding-top: 7px;
-    background-color: #74d8d9;
+    background-color: #00B06B;
     color: #fff;
     text-align: center;
     font-weight: bold;
@@ -410,38 +415,72 @@ h4 {
 各県のトップページ
 -------------------------------*/
 
-.todohuken-top-h1 {
-    font-size: 2.3em;
-    border: #707070 3px double;
-    line-height: 100px;
-    text-align: center;
-    margin-top: -20px;
-    margin-bottom: 70px;
-    font-family: "M PLUS Rounded 1c";
-    width: 100%;
-    padding: 0;
-}
-
-.area-btn {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.area-btn li {
-    display: block;
-    width: calc( 100% / 3);
-    text-align: center;
-}
-
-.area-btn li a {
-    color: #ffffff;
-    height: 25vh;
+.todohuken-top{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     background-size: cover;
-    background-position: center;
+    height: 30vh;
+    background-image: url(../kyushu/fukuoka/img/todohuken-top.jpg);
+}
+.todohuken-top-h1{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fukuoka-top .todohuken-top-h1{
+    background-image: url(../kyushu/fukuoka/img/fukuoka-map.svg);
+}
+.todohuken-top-h1 h1{
+    font-size: 2em;
+    margin-top: 20px;
+    line-height: 0.8;
+    text-align: center;
+    font-family: "M PLUS Rounded 1c";
+    width: 100%;
+    padding: 0;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #3d3d3d;
+}
+.todohuken-top-h1 h1 span {
+    display: inline-block;
+    font-size: 0.5em;
+}
+
+.area-btn {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25vh;
+}
+.area-btn li{
+    position: relative;
+}
+
+.area-btn li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.area-btn li a {
+    font-family: "M PLUS Rounded 1c";
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
     background-blend-mode: multiply;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    text-shadow: 0px 0px 4px #3d3d3d;
+}
+
+.area-btn li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 /*-------------------------------
@@ -496,7 +535,7 @@ h4 {
 }
 
 .tag-genre li a {
-    color: #74d8d9;
+    color: #00B06B;
 }
 
 .tag-genre li a::before {
@@ -640,8 +679,8 @@ h4 {
 }
 
 .acd-label-post {
-    background: #5F9696;
-    border-bottom: 7px #3F6363 solid;
+    background: #39BD88;
+    border-bottom: 7px #00B06B solid;
     border-radius: 100px;
     color: #fff;
     display: flex;
@@ -729,7 +768,7 @@ article h2 {
 }
 
 .page-search {
-    background-color: #e3b5b1;
+    background-color: #0AC746;
     padding-bottom: 20px;
 }
 
@@ -799,7 +838,7 @@ article h2 {
     margin-right: 5px;
     padding: 0 10px 2px;
     border-radius: 100px;
-    border: #74d8d9 1px solid;
+    border: #00B06B 1px solid;
 }
 
 .search-box .tag-genre li a {
@@ -846,7 +885,7 @@ article h2 {
 パンくずリスト
 -------------------------------*/
     .breadcrumb-section {
-        padding-top: 130px;
+        padding-top: 110px;
     }
     .breadcrumb-section .container {
         padding: 0;
@@ -949,20 +988,18 @@ article h2 {
     /*-------------------------------
 各県のトップページ
 -------------------------------*/
-    .area-btn {
-        justify-content: left;
-    }
-    .area-btn li {
-        width: 15%;
-        margin-top: 20px;
-        margin-right: 2%;
-    }
-    .area-btn li:nth-child(6n) {
-        margin-right: 0;
-    }
-    .area-btn li a {
-        height: 30vh;
-    }
+.todohuken-top{
+    height: 50vh;
+}
+.todohuken-top-h1{
+    width: 40vh;
+    height: 40vh;
+}
+.area-btn {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
     /*-------------------------------
 個別ページのデザイン
 -------------------------------*/
