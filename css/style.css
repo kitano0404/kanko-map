@@ -419,6 +419,7 @@ h4 {
     width: 100%;
     background-size: cover;
     height: 30vh;
+    margin-top: -20px;
 }
 #fukuoka-top .todohuken-top{
     background-image: url(../kyushu/fukuoka/img/fukuoka-top.jpg);
@@ -448,19 +449,24 @@ h4 {
 .area-btn {
     display: grid;
     gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 25vh;
+    grid-template-columns: 1fr 1fr;
 }
 .area-btn li{
-    position: relative;
+    position: relative; 
+    overflow:hidden;
 }
-
-.area-btn li img{
+.area-btn li a img{
     width: 100%;
     height: 100%;
+    transition:1s all;
     object-fit: cover;
 }
-.area-btn li a {
+.area-btn li a img:hover{
+    transform:scale(1.2,1.2);
+    transition:1s all;
+}
+
+.area-btn li div{
     font-family: "M PLUS Rounded 1c";
     display: flex;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
@@ -472,21 +478,14 @@ h4 {
     padding: 5px;
     color: #ffffff;
     text-shadow: 0px 0px 4px #3d3d3d;
+    pointer-events: none;
 }
-.area-btn li a::after {
-    font-family: "Font Awesome 5 Free";
-    content: '\f061';
-    font-weight: 900;
-    font-size: 0.9em;
+.area-btn li div::after{
+    content: url(../kyushu/fukuoka/img/greeen-arrow.png);
     position: absolute;
-    bottom: 5px;
+    bottom: 0;
     right: 5px;
-    display: inline-block;
-    color:  #00B06B;
-    text-align: center;
-    border-radius: 50%;
 }
-
 /*-------------------------------
 個別ページのデザイン
 -------------------------------*/
@@ -996,9 +995,18 @@ article h2 {
     height: 50vh;
 }
 .area-btn {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 0;
+}
+.area-btn li{
+    width: 15%;
+    margin-bottom: 20px;
+    margin-right: 2%;
+}
+.area-btn li:nth-child(6n){
+    margin-right: 0;
 }
     /*-------------------------------
 個別ページのデザイン
