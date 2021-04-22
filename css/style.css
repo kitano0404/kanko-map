@@ -475,42 +475,76 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45vh;
+    height: 40vh;
     margin-top: -40px;
     margin-bottom: 50px;
 }
+
 .white-border {
     width: 95%;
     height: 95%;
     border: 5px #ffffff solid;
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 3vh 20px;
 }
-.list-h1 img{
-    height: 35vh;
+
+.list-h1 img {
+    height: 30vh;
 }
-.list-h1 h1{
+
+.list-h1-many, .list-h1-few {
     color: #ffffff;
     font-weight: bold;
-    font-size: 2.1em;
-    position: relative;
-    margin-left: 30px;
-    height: 1.5;
+    margin-left: 20px;
+    line-height: 1;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.list-h1-many p span, .list-h1-few p span {
+    font-size: 0.7em;
+}
+
+.list-h1-many {
+    font-size: 1.4em;
+}
+
+.list-h1-few {
+    font-size: 2.3em;
+    display: block;
+}
+
+.list-h1-many p {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.list-h1-few p {
+    width: 100%;
+    margin-top: 10px;
+}
+
 .page-item.active .page-link {
     background-color: #cccccc;
     border-color: #cccccc;
+}
+
+.area-list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .area-list div a {
     color: #707070;
 }
 
-
 .area-list div .card a img:hover {
     opacity: 0.7;
 }
+
 .area-list div .card a img {
     width: 100%;
     height: 35vh;
@@ -522,6 +556,7 @@ h4 {
     position: relative;
     z-index: 50;
 }
+
 .area-list-text h3 {
     font-weight: bold;
     padding-right: 70px;
@@ -936,7 +971,6 @@ article h2 {
     .container-smnone {
         width: 100%;
     }
-
     .sm-none {
         display: none;
     }
@@ -1099,27 +1133,39 @@ article h2 {
     /*-------------------------------
 一覧ページのデザイン
 -------------------------------*/
-.list-h1 {
-    height: 250px;
-    max-width: 1200px;
-    width: 95%;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-.white-border {
-    width: 98%;
-    height: 93%;
-}
-.list-h1 img{
-    height: 180px;
-    margin-left: 50px;
-}
-.list-h1 h1{
-    font-size: 2.5em;
-    position: relative;
-    margin-left: 50px;
-}
+    .list-h1 {
+        height: 300px;
+        max-width: 1200px;
+        width: 95%;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .white-border {
+        width: 98%;
+        height: 93%;
+        justify-content: left;
+        padding: 0;
+    }
+    .list-h1 img {
+        height: 230px;
+        margin-left: 50px;
+    }
+    .list-h1-many, .list-h1-few {
+        margin-left: 0;
+        width: 90%;
+    }
+    .list-h1-many {
+        font-size: 2.3em;
+    }
+    .list-h1-few {
+        font-size: 2.3em;
+        display: block;
+    }
+    .list-h1-many p, .list-h1-few p {
+        width: 25%;
+        margin-top: 20px;
+    }
     /*-------------------------------
 個別ページのデザイン
 -------------------------------*/
